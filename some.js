@@ -1,6 +1,6 @@
 /*	Share On Mastodon Easily 
 	========================
-	Script URI:  https://gist.github.com/kmhcreative/
+	Script URI:  https://github.com/kmhcreative/Share-on-Mastodon-Easily/
 	Description: Makes sharing to Mastodon instances as easy as any other social media platform.
 	Version: 	 1.2
 	Author: 	 K.M. Hansen <software@kmhcreative.com>
@@ -10,43 +10,7 @@
 	
 	HOW TO USE THIS SCRIPT
 	-----------------------
-	A. Use a default share button
-		1. Link to this script on GitHub or download and install it on your website.
-		2. Add an element to be turned into the Mastodon Share button:
-			<div class="mastodon" data-style="word"></div>
-			<div class="mastodon" data-style="icon"></div>
-			
-	B. Customize a Button
-		1. Link to this script on GitHub or download and install it on your website.
-		2. Add an element to be turned into the Mastodon Share button:
-			<div class="mastodon" data-logo="white" data-color="black" data-size="48"></div>
-			Parameters:
-			data-logo : black|full-black|full-white|purple|white|wordmark-black-text|wordmark-white-text
-			data-color: black|white|midnight|blurple|darkblue|lightblue
-			data-size : (any numerical value, this is the pixel height of the button)
-	
-	C. Completely Custom Button
-		1. Link to this script on GitHub or download and install it on your website.
-		2. Add an element to be turned into the share button with the class name "mastodon"
-		3. Style the button as you please in your website's stylesheet.
-		
-	D. Customize This Script
-		1. Download and EDIT this script, then install it on your website.
-			Look at the descriptions next to each option in "settings" below.
-		2. Create your button element(s) in your site code.
-	
-	To install this script on your website:
-		A.	Any Site: In the <head> of your page code add: 
-			<script type="text/javascript" src="path/to/some.js"></script>
-			
-		B.	WordPress: Add the following to your wp_enqueue_scripts function in your theme's "functions.php" file:	
-			wp_enqueue_script( 'share-on-mastodon-easily', 'path/to/some.js', '', '1.0', true );
-
-	Your link/button elements does not have to have an href, the script will get
-	the current window location if no usable href is found on the element itself.
-	
-	Do not encode the URL before sending it to this script, it will result in an
-	unusable link on Mastodon.	
+	See README.md file or visit https://www.kmhcreative.com/share-on-mastodon-easily-script/	
 */
 var some = some || {};	// to prevent name collisions
 
