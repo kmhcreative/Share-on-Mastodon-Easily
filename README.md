@@ -1,10 +1,12 @@
 # Share-on-Mastodon-Easily
 
+[ [GO DIRECTLY TO BUTTON CONFIGURATOR](https://kmhcreative.github.io/Share-on-Mastodon-Easily/button_configurator.htm) :arrow_right: ]
+
 There are literally THOUSANDS of different Mastodon websites on different servers and each is called an “instance.”  Most of them are “federated” with each other, and other platforms that support the AcitvityPub protocol, because the entire thing is decentralized by design.  But that means you have no way to guess which “instance” any visitor to your website might be on.  So, before they can share anything to their Mastodon account you have to FIRST ask them which instance they use.  That’s primarily what this “Share On Mastodon Easily” (S.O.M.E.) script does.  It lets you share some link somewhere. 
 
 This script converts an HTML element with the class name "mastodon" into a share button.  When a visitor presses it a pop-up/tab is created on the fly to ask them what Mastodon instance they are on, and gives them an option to remember it so when they return to your site they are not asked again.
 
-<img src="https://github.com/kmhcreative/Share-on-Mastodon-Easily/blob/e22e25a9e0d3e355df93b7a75461a90133d54aad/Mastodon_Instance_PopUp.png" width="400"/> <img src="https://github.com/kmhcreative/Share-on-Mastodon-Easily/blob/e22e25a9e0d3e355df93b7a75461a90133d54aad/Mastodon_Instance_PopUp2.png" width="400"/> <img src="https://github.com/kmhcreative/Share-on-Mastodon-Easily/blob/e22e25a9e0d3e355df93b7a75461a90133d54aad/Mastodon_Publish_Window.png" width="400"/>
+<img src="https://kmhcreative.github.io/Share-on-Mastodon-Easily/Mastodon_Instance_PopUp.png" width="400"/> <img src="https://kmhcreative.github.io/Share-on-Mastodon-Easily/Mastodon_Instance_PopUp2.png" width="400"/> <img src="https://kmhcreative.github.io/Share-on-Mastodon-Easily/Mastodon_Publish_Window.png" width="400"/>
 
 ## HOW TO USE THIS SCRIPT    
 
@@ -12,9 +14,13 @@ This script converts an HTML element with the class name "mastodon" into a share
 
    Include the "some.js" script on your website, preferably in the `<HEAD>` block, but anywhere should still work.
 
-   a. Load from GitHub using [jsDelivr CDN](https://www.jsdelivr.com/):
+   a. ***LOAD USING CDN*** (_RECOMMENDED_) 
+   
+   The following will load the script using [jsDelivr CDN](https://www.jsdelivr.com/):
    
    `<script type="text/javascript" language="javascript" src="https://cdn.jsdelivr.net/gh/kmhcreative/Share-on-Mastodon-Easily@main/some.js"></script>`
+   
+   The server cache is updated every 12 hours, but any cached version of the script in a user's browser won't expire for a full week.  If you're not planning on modifying the script and don't mind not getting updates immediately, please use the CDN.
 
    b. Download and install the script on any website:
 
@@ -38,8 +44,8 @@ This script converts an HTML element with the class name "mastodon" into a share
       `<div class="mastodon" data-style="icon"></div>`
 			
    b. ***Customize a Button***
-   
-      THERE IS A [***BUTTON CONFIGURATOR***](https://www.kmhcreative.com/share-on-mastodon-easily-script/#configurator) FOR THIS, or you can do it manually like this:   
+
+      THERE IS A [***BUTTON CONFIGURATOR***](https://kmhcreative.github.io/Share-on-Mastodon-Easily/button_configurator.htm) FOR THIS, or you can do it manually like this:   
       
       Add an element to be turned into the Mastodon Share button:  
       
@@ -136,3 +142,7 @@ Author URI:  http://www.kmhcreative.com
 	
 ## License: 	 
 ***GPLv3*** - License URI: [http://www.gnu.org/licenses/gpl-3.0.html](http://www.gnu.org/licenses/gpl-3.0.html)
+
+The Mastodon logos and icons are the property of [Mastodon gGmbH](https://joinmastodon.org/about), a German non-profit company.  
+
+This is not an official Mastodon project.
