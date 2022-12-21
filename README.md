@@ -127,7 +127,7 @@ Do not encode the URL before sending it to this script, it will result in an unu
 
 Get the code for this project, submit bugs, issues, suggestions, fork it, whatever!
 
-https://github.com/kmhcreative/Share-on-Mastodon-Easily
+[https://github.com/kmhcreative/Share-on-Mastodon-Easily](https://github.com/kmhcreative/Share-on-Mastodon-Easily)
   
 ## Changelog
 Version 1.2  
