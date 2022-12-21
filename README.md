@@ -1,6 +1,6 @@
 # Share-on-Mastodon-Easily
 
-[ [GO DIRECTLY TO BUTTON CONFIGURATOR](https://kmhcreative.github.io/Share-on-Mastodon-Easily/button_configurator.htm) :arrow_right: ]
+[ [GO DIRECTLY TO BUTTON CONFIGURATOR](https://kmhcreative.github.io/Share-on-Mastodon-Easily/button_configurator.htm) --> ]
 
 There are literally THOUSANDS of different Mastodon websites on different servers and each is called an “instance.”  Most of them are “federated” with each other, and other platforms that support the AcitvityPub protocol, because the entire thing is decentralized by design.  But that means you have no way to guess which “instance” any visitor to your website might be on.  So, before they can share anything to their Mastodon account you have to FIRST ask them which instance they use.  That’s primarily what this “Share On Mastodon Easily” (S.O.M.E.) script does.  It lets you share some link somewhere. 
 
@@ -22,11 +22,11 @@ This script converts an HTML element with the class name "mastodon" into a share
    
    The server cache is updated every 12 hours, but any cached version of the script in a user's browser won't expire for a full week.  If you're not planning on modifying the script and don't mind not getting updates immediately, please use the CDN.
 
-   b. Download and install the script on any website:
+   b. [Download](https://github.com/kmhcreative/Share-on-Mastodon-Easily/archive/refs/heads/main.zip) and install the script on any website:
 
    `<script type="text/javascript" language="javascript" src="/your/path/to/some.js></script>`
 
-   c. Download and install the script on your WordPress site by adding the following to your theme's ***functions.php*** file:
+   c. [Download](https://github.com/kmhcreative/Share-on-Mastodon-Easily/archive/refs/heads/main.zip) and install the script on your WordPress site by adding the following to your theme's ***functions.php*** file:
 
    `wp_enqueue_script( 'share-on-mastodon-easily', 'path/to/some.js', '', '1.0', true );`
    
@@ -61,7 +61,7 @@ This script converts an HTML element with the class name "mastodon" into a share
 
    c. ***Completely Custom Button***   
   
-      1. Link to this script on GitHub or download and install it on your website.
+      1. Link to this script through the [CDN](https://cdn.jsdelivr.net/gh/kmhcreative/Share-on-Mastodon-Easily@main/some.js) or [download](https://github.com/kmhcreative/Share-on-Mastodon-Easily/archive/refs/heads/main.zip) and install it on your website.
 
       2. Add an element to be turned into the share button with the class name "mastodon" like so:
       
@@ -82,7 +82,7 @@ This script converts an HTML element with the class name "mastodon" into a share
 		
    d. ***Customize This Script***
 
-      1. Download and EDIT this script, then install it on your website.
+      1. [Download](https://github.com/kmhcreative/Share-on-Mastodon-Easily/archive/refs/heads/main.zip) and EDIT this script, then install it on your website.
 
          Look at the descriptions next to each option in "settings" below.
          
@@ -122,6 +122,12 @@ This script converts an HTML element with the class name "mastodon" into a share
 Your link/button elements does not have to have an href, the script will get the current window location if no usable href is found on the element itself.
 
 Do not encode the URL before sending it to this script, it will result in an unusable link on Mastodon.	
+
+### CODE:
+
+Get the code for this project, submit bugs, issues, suggestions, fork it, whatever!
+
+https://github.com/kmhcreative/Share-on-Mastodon-Easily
   
 ## Changelog
 Version 1.2  
