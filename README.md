@@ -12,116 +12,140 @@ This script converts an HTML element with the class name "mastodon" into a share
 
 1. ***LOAD THE SCRIPT***
 
-   Include the "some.js" script on your website, preferably in the `<HEAD>` block, but anywhere should still work.
+Include the "some.js" script on your website, preferably in the `<HEAD>` block, but anywhere should still work.
 
-   a. ***LOAD USING CDN*** (_RECOMMENDED_) 
-   
-   The following will load the script using [jsDelivr CDN](https://www.jsdelivr.com/):
-   
-   `<script type="text/javascript" language="javascript" src="https://cdn.jsdelivr.net/gh/kmhcreative/Share-on-Mastodon-Easily@main/some.js"></script>`
-   
-   The server cache is updated every 12 hours, but any cached version of the script in a user's browser won't expire for a full week.  If you're not planning on modifying the script and don't mind not getting updates immediately, please use the CDN.
-
-   b. [Download](https://github.com/kmhcreative/Share-on-Mastodon-Easily/archive/refs/heads/main.zip) and install the script on any website:
-
-   `<script type="text/javascript" language="javascript" src="/your/path/to/some.js></script>`
-
-   c. [Download](https://github.com/kmhcreative/Share-on-Mastodon-Easily/archive/refs/heads/main.zip) and install the script on your WordPress site by adding the following to your theme's ***functions.php*** file:
-
-   `wp_enqueue_script( 'share-on-mastodon-easily', 'path/to/some.js', '', '1.0', true );`
-   
-   _Change "path/to/some.js" to either your local path, if you downloaded and installed the script locally, or to the CDN URL to load it remotely._
+  a. ***LOAD USING CDN*** (_RECOMMENDED_)   
+  
+  The following will load the script using [jsDelivr CDN](https://www.jsdelivr.com/):   
+  
+  `<script type="text/javascript" language="javascript" src="https://cdn.jsdelivr.net/gh/kmhcreative/Share-on-Mastodon-Easily@main/some.js"></script>`   
+  
+  The server cache is updated every 12 hours, but any cached version of the script in a user's browser won't expire for a full week.  If you're not planning on modifying the script and don't mind not getting updates immediately, please use the CDN.   
+  
+  b. [Download](https://github.com/kmhcreative/Share-on-Mastodon-Easily/archive/refs/heads/main.zip) and install the script on any website:   
+  
+  `<script type="text/javascript" language="javascript" src="/your/path/to/some.js></script>`   
+  
+  c. Enqueue in WordPress    
+  
+  [Download](https://github.com/kmhcreative/Share-on-Mastodon-Easily/archive/refs/heads/main.zip) and install the script on your WordPress site, or link to the script using the CDN, by adding the following to your theme's ***functions.php*** file:    
+  
+  `wp_enqueue_script( 'share-on-mastodon-easily', 'path/to/some.js', '', '1.0', true );`    
+  
+  _Change "path/to/some.js" to either your local path, if you downloaded and installed the script locally, or to the CDN URL to load it remotely._
 
 
 2. ***MAKE A BUTTON***
 
-   a. ***Use a default share button***  
+Include an element in your page with the class name "mastodon" and it will be converted into a share button by the "some.js" script.
 
-      Add an element to be turned into the Mastodon Share button:
-
-      `<div class="mastodon" data-style="word"></div>`
-
-      `<div class="mastodon" data-style="icon"></div>`
-			
-   b. ***Customize a Button***
-
-      THERE IS A [***BUTTON CONFIGURATOR***](https://kmhcreative.github.io/Share-on-Mastodon-Easily/button_configurator.htm) FOR THIS, or you can do it manually like this:   
-      
-      Add an element to be turned into the Mastodon Share button:  
-      
-      `<div class="mastodon" data-logo="white" data-color="black" data-size="48"></div>`   
-      
-      ***Parameters:***
-       
-      `data-logo : black|full-black|full-white|purple|white|wordmark-black-text|wordmark-white-text`
-			
-      `data-color: black|white|midnight|blurple|darkblue|lightblue`
-			
-      `data-size : (any numerical value, this is the pixel height of the button)`
-
-   c. ***Completely Custom Button***   
+  a. ***Default Buttons***  
   
-      1. Link to this script through the [CDN](https://cdn.jsdelivr.net/gh/kmhcreative/Share-on-Mastodon-Easily@main/some.js) or [download](https://github.com/kmhcreative/Share-on-Mastodon-Easily/archive/refs/heads/main.zip) and install it on your website.
+  Add an element to be turned into the Mastodon Share button using the "data-style" attribute:  
+  
+  `<div class="mastodon" data-style="word"></div>`  
+  
+  `<div class="mastodon" data-style="icon"></div>`  
+			
+  b. ***Customized Button***   
+  
+  THERE IS A [***BUTTON CONFIGURATOR***](https://kmhcreative.github.io/Share-on-Mastodon-Easily/button_configurator.htm) FOR THIS, or you can do it manually. Add an element to be turned into the Mastodon Share button:    
+  
+  `<div class="mastodon" data-logo="white" data-color="black" data-size="48"></div>`  	
+  
+  ***Parameters:***   
+    
+  `data-logo : black|full-black|full-white|purple|white|wordmark-black-text|wordmark-white-text`  
+    
+  `data-color: black|white|midnight|blurple|darkblue|lightblue`   
+    
+  `data-size : (any numerical value, this is the pixel height of the button)`    
+     
+  c. ***Bespoke Button***   
+    
+  i. Link to this script through the [CDN](https://cdn.jsdelivr.net/gh/kmhcreative/Share-on-Mastodon-Easily@main/some.js) or [download](https://github.com/kmhcreative/Share-on-Mastodon-Easily/archive/refs/heads/main.zip) and install it on your website.    
+    
+  ii. Add an element to be turned into the share button with the class name "mastodon" like so:  
+    
+  `<div class="mastodon">Share on Mastodon</div>`    
+    
+  iii. Style the button as you please in your website's stylesheet, for example:    
+	
+  ```css    
+    .mastodon {    
+	display: inline-block;   
+	font-size: 14px;   
+	color: white;   
+	background-color: lightblue;   
+	border-radius: 4px;   
+	border: 1px solid darkblue;   
+    }   
+  ```
 
-      2. Add an element to be turned into the share button with the class name "mastodon" like so:
-      
-         `<div class="mastodon">Share on Mastodon</div>`
+3. ***CUSTOMIZE SCRIPT***_(Optional)_    
 
-      3. Style the button as you please in your website's stylesheet, for example:
-      
-         ```css
-         .mastodon {
-             display: inline-block;
-             font-size: 14px;
-             color: white;
-             background-color: lightblue;
-             border-radius: 4px;
-             border: 1px solid darkblue;
-          }
-          ```
-		
-   d. ***Customize This Script***
+Just about all the internals of the script are exposed and can be manipulated after the script has loaded. 
 
-      1. [Download](https://github.com/kmhcreative/Share-on-Mastodon-Easily/archive/refs/heads/main.zip) and EDIT this script, then install it on your website.
+For example, let's say you want the share window to open in a new tab instead of a pop-up window, and you want it to ask visitors for their instance every time they visit your site instead of offering to store it.  Somewhere AFTER the "some.js" script was loaded include a script block like this:   
 
-         Look at the descriptions next to each option in "settings" below.
-         
-         ```javascript
-          /* Settings */   
-          some['settings'] = {   
-               queryobj    :   '.mastodon',// query to find mastodon share elements   
-               titletoo    :   true,       // whether to include the page title and URL   
-               rememberme  :   true,       // whether to offer to remember instance or not  
-               skipdialog  :   true,       // whether to skip the instance dialog if remembered  
-               openapopup  :   true,       // whether to open in a pop-up window, false opens in new tab   
-          };
-          // if this script is also styling the share button   
-          some['logo'] = {    // SVG Mastodon icons/logos using the file names from joinmastodon.org  
-               'black'           : '<svg width="74" height="79" viewBox="0 0 74 79". [truncated]...></svg>',  
-               'full-black'          : '<svg width="313" height="80" viewBox="0 0 313 80"..[truncated]..></svg>',   
-               'full-white'          : '<svg width="313" height="80" viewBox="0 0 313 80"..[truncated]..></svg>',   
-               'purple'          : '<svg width="75" height="79" viewBox="0 0 75 79"..[truncated]...></svg>',  
-               'white'           : '<svg width="74" height="79" viewBox="0 0 74 79"..[truncated]..></svg>',   
-               'wordmark-black-text' : '<svg width="314" height="80" viewBox="0 0 314 80"..[truncated]..></svg>',  
-               'wordmark-white-text' : '<svg width="313" height="81" viewBox="0 0 313 81"..[truncated]..></svg>'  
-           };
-           some['color'] = {   // main color, rollover color, text color (taken from joinmastodon.org examples)  
-                'black'    : ['#000000','#333333','#ffffff'],  
-                'white'    : ['#ffffff','#f6f6f6','#000000'],   
-                'midnight' : ['#17063b','#000000','#ffffff'],  
-                'blurple'  : ['#6364ff','#563acc','#000000'],  
-                'darkblue' : ['#2f0c7a','#17063b','#ffffff'],  
-                'lightblue': ['#858afa','#6364ff','#000000']  
-           };
-         ```
-		
-      2. Create your button element(s) in your site code.
+  a. ***CHANGE SETTINGS***   
+	
+  ```javascript
+  <script type="text/javascript">
+     some.settings.openapopup = false;
+     some.settings.rememberme = false;
+  </script>
+  ```   
+	
+  b. ***CHANGE COLORS***   
+  
+  Let's say you decide to add a color option for the holidays:   
+  
+  ```javascript
+   <script type="text/javascript">
+     some.color.xmas = ['red','green','white'];
+   </script>
+  ```   
+	
+  Then you'd just need to include `data-color="xmas"` in your button element attributes.  You could also redefine an existing color.   
+	
+  c. ***CHANGE LANGUAGE***   
+	
+  The share window is constructed "on-the-fly" so all the text used in it can be changed as well.  For example you could change it Spanish like this:
+	
+  ```javascript
+  <script type="text/javascript">
+    some.text.heading = “Compartir en Mastodonte”;
+    some.text.label = “URL de su instancia”;
+    some.text.checkbox = “Recordar mi instancia en este sitio web”;
+    some.text.close = “Cerrar”;
+    some.text.share = “¡Cuota!”;
+    some.text.whatis = “¿Qué es Mastodonte?”;
+    some.text.github = “Mastodonte en GitHub”;	
+  </script>
+  ```
+	
+  d. ***CHANGE BUTTON IMAGES***
+	
+  The script comes pre-loaded with the SVG images for all the official Mastodon logo and icon variations. But if you wanted to define something else you could do it like this:
+	
+  ```javascript
+  <script type="text/javascript">
+    some.logo['dot-dot-dot'] = '<svg width="75" height="75".....></svg>
+  </script>
+  ```
+  e. ***FULL CUSTOMIZATION***
+  
+  If you download the script to do a local installation you can, of course, customize it any way you like.  Including all of the aforementioned customization, which could be done in the "some.js" script if you liked.
 	
 ### NOTES:
+* If you are defining new keywords with dashes in the names you need to do it inside quotes (as shown above for "Change Button Images") because trying to define that name in dot notation will throw an error.
 
-Your link/button elements does not have to have an href, the script will get the current window location if no usable href is found on the element itself.
+* Your link/button elements does not have to have an href, the script will get the current window location if no usable href is found on the element itself.
 
-Do not encode the URL before sending it to this script, it will result in an unusable link on Mastodon.	
+* Do not encode the URL before sending it to this script, it will result in an unusable link on Mastodon.
+
+* Button Configurator translations were done with Google Translate, they may not be accurate.  If you can fix any of them please do and submit a pull request for your changes.	
 
 ### CODE:
 
@@ -130,6 +154,10 @@ Get the code for this project, submit bugs, issues, suggestions, fork it, whatev
 [https://github.com/kmhcreative/Share-on-Mastodon-Easily](https://github.com/kmhcreative/Share-on-Mastodon-Easily)
   
 ## Changelog
+Version 1.3
+* Made share window text into variables so they can be localized.
+* Added multiple language options to the Button Configurator.
+
 Version 1.2  
 * Changed `window.onload` to `window.addEventListener('load'..)` to prevent conflicts with any other onload events.
 * Removed instructions from the script it self and placed them in this README file.
