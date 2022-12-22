@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Mastodon Share Button Configurator</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title class="l10n">Mastodon Share Button Configurator</title>
 		<script type="text/javascript" language="javascript" src="some.js"></script>
 		<style>
 			body {
@@ -11,7 +12,7 @@
 				padding: 20px 0;
 				margin: 0 auto;
 			}
-			svg {
+			header svg {
 				display: block;
 				margin: 0 auto;
 			}
@@ -86,24 +87,38 @@
 					pre.code textarea::-moz-selection {
 						background-color: lime;
 						color: black;
-					}		
+					}
+			#translate {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				padding: 5px;
+				background-color: #333;
+				color: white;
+				text-align: right;
+				box-sizing: border-box;
+			}
 		</style>
 	</head>
 	<body>
-		<svg width="314" height="80" viewBox="0 0 314 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M73.4455 17.6962C72.3169 9.19775 65.0038 2.48901 56.346 1.19841C54.8811 0.979247 49.3453 0.175659 36.5206 0.175659H36.4245C23.5879 0.175659 20.838 0.979247 19.373 1.19841C10.9433 2.46467 3.25813 8.4794 1.38487 17.0875C0.496264 21.3246 0.400199 26.0244 0.568313 30.3345C0.808475 36.5198 0.856508 42.6805 1.40888 48.8414C1.79314 52.9325 2.45359 56.9869 3.40223 60.9804C5.17943 68.3588 12.3603 74.4954 19.3971 76.9914C26.9261 79.5969 35.0317 80.0352 42.7888 78.2453C43.6414 78.0385 44.482 77.8071 45.3226 77.5392C47.2079 76.9304 49.4173 76.2486 51.0504 75.0555C51.0745 75.0432 51.0865 75.0189 51.0985 74.9945C51.1105 74.9702 51.1225 74.9458 51.1225 74.9093V68.9433C51.1225 68.9433 51.1225 68.8946 51.0985 68.8702C51.0985 68.8459 51.0745 68.8215 51.0504 68.8093C51.0264 68.7972 51.0024 68.785 50.9785 68.7728C50.9543 68.7728 50.9304 68.7728 50.9064 68.7728C45.9349 69.9783 40.8316 70.587 35.7281 70.5748C26.9261 70.5748 24.5605 66.3377 23.8881 64.5844C23.3477 63.0625 22.9995 61.4675 22.8554 59.8603C22.8554 59.8359 22.8554 59.8116 22.8674 59.7873C22.8674 59.7629 22.8914 59.7386 22.9155 59.7263C22.9394 59.7142 22.9634 59.702 22.9874 59.6899H23.0715C27.9588 60.883 32.9782 61.4918 38.0096 61.4918C39.2225 61.4918 40.4232 61.4918 41.6361 61.4554C46.6915 61.3092 52.0232 61.0535 57.0065 60.0673C57.1265 60.0429 57.2587 60.0186 57.3667 59.9943C65.2201 58.4601 72.6891 53.6629 73.4455 41.5117C73.4697 41.0369 73.5417 36.4954 73.5417 36.0084C73.5417 34.3159 74.082 24.0398 73.4576 17.7207L73.4455 17.6962Z" fill="url(#paint0_linear_612_176)"/><path d="M15.3145 22.4452C15.3145 19.9613 17.2718 17.9646 19.6974 17.9646C22.1231 17.9646 24.0803 19.9735 24.0803 22.4452C24.0803 24.9168 22.1231 26.9257 19.6974 26.9257C17.2718 26.9257 15.3145 24.9168 15.3145 22.4452Z" fill="white"/><path d="M80.5188 26.3048V46.9058H72.5334V26.9136C72.5334 22.7008 70.8042 20.57 67.3338 20.57C63.5033 20.57 61.5699 23.1148 61.5699 28.1189V39.0647H53.6446V28.1189C53.6446 23.0904 51.7353 20.57 47.8807 20.57C44.4224 20.57 42.6811 22.7008 42.6811 26.9136V46.8937H34.7078V26.3048C34.7078 22.1042 35.7525 18.7559 37.8539 16.2721C40.0274 13.7883 42.8733 12.5342 46.3916 12.5342C50.4744 12.5342 53.5725 14.1413 55.614 17.3557L57.6073 20.7649L59.6007 17.3557C61.642 14.1536 64.7281 12.5342 68.8229 12.5342C72.3412 12.5342 75.1872 13.8005 77.3607 16.2721C79.4621 18.7559 80.5068 22.0798 80.5068 26.3048H80.5188ZM107.993 36.5444C109.65 34.7546 110.431 32.5386 110.431 29.8357C110.431 27.1327 109.638 24.8924 107.993 23.1879C106.408 21.398 104.391 20.5457 101.953 20.5457C99.5156 20.5457 97.5102 21.398 95.9132 23.1879C94.3281 24.8924 93.5356 27.1327 93.5356 29.8357C93.5356 32.5386 94.3281 34.7789 95.9132 36.5444C97.4982 38.2489 99.5156 39.1135 101.953 39.1135C104.391 39.1135 106.396 38.2612 107.993 36.5444ZM110.431 13.3622H118.296V46.3093H110.431V42.4253C108.053 45.6517 104.763 47.2468 100.488 47.2468C96.2134 47.2468 92.9232 45.603 90.0052 42.2426C87.1353 38.8822 85.6823 34.7302 85.6823 29.86C85.6823 24.9898 87.1472 20.8988 90.0052 17.5383C92.9352 14.1779 96.4176 12.4734 100.488 12.4734C104.559 12.4734 108.053 14.0562 110.431 17.2705V13.3865V13.3622ZM144.762 29.2148C147.08 31.0045 148.233 33.5006 148.173 36.654C148.173 40.0144 147.02 42.6566 144.642 44.4829C142.265 46.2727 139.394 47.1858 135.912 47.1858C129.632 47.1858 125.369 44.5438 123.111 39.357L129.933 35.2051C130.844 38.0298 132.851 39.4909 135.912 39.4909C138.722 39.4909 140.115 38.5778 140.115 36.6661C140.115 35.2782 138.289 34.0241 134.567 33.05C133.162 32.6604 131.998 32.2586 131.097 31.9299C129.812 31.4064 128.719 30.8097 127.806 30.0792C125.549 28.2894 124.397 25.9273 124.397 22.8956C124.397 19.6691 125.489 17.1 127.687 15.2494C129.945 13.3378 132.694 12.4246 135.984 12.4246C141.231 12.4246 145.062 14.7258 147.572 19.4012L140.872 23.346C139.899 21.1058 138.241 19.9856 135.984 19.9856C133.606 19.9856 132.454 20.8988 132.454 22.6886C132.454 24.0767 134.279 25.3308 138.002 26.3048C140.872 26.9623 143.129 27.9485 144.762 29.2148H144.774H144.762ZM169.764 21.5198H162.87V35.2295C162.87 36.8731 163.483 37.8715 164.648 38.3221C165.5 38.6508 167.206 38.7116 169.776 38.5899V46.2971C164.48 46.9545 160.637 46.4188 158.38 44.6533C156.122 42.9487 155.029 39.771 155.029 35.2416V21.5198H149.733V13.3499H155.029V6.7021L162.894 4.13305V13.3622H169.788V21.532H169.776L169.764 21.5198ZM194.836 36.3496C196.422 34.6451 197.213 32.4656 197.213 29.8236C197.213 27.1814 196.422 25.0264 194.836 23.2974C193.239 21.5928 191.293 20.7283 188.916 20.7283C186.538 20.7283 184.593 21.5807 182.996 23.2974C181.471 25.0872 180.678 27.2423 180.678 29.8236C180.678 32.4047 181.471 34.5598 182.996 36.3496C184.581 38.0542 186.538 38.9186 188.916 38.9186C191.293 38.9186 193.239 38.0664 194.836 36.3496ZM177.461 42.206C174.35 38.8456 172.826 34.7668 172.826 29.8236C172.826 24.8802 174.35 20.8623 177.461 17.5019C180.571 14.1413 184.413 12.4368 188.916 12.4368C193.419 12.4368 197.274 14.1413 200.372 17.5019C203.47 20.8623 205.067 25.0141 205.067 29.8236C205.067 34.6328 203.47 38.8456 200.372 42.206C197.261 45.5666 193.48 47.2102 188.916 47.2102C184.353 47.2102 180.559 45.5666 177.461 42.206ZM231.364 36.5323C232.95 34.7425 233.742 32.5265 233.742 29.8236C233.742 27.1206 232.95 24.8802 231.364 23.1756C229.78 21.3858 227.763 20.5336 225.325 20.5336C222.888 20.5336 220.869 21.3858 219.225 23.1756C217.64 24.8802 216.847 27.1206 216.847 29.8236C216.847 32.5265 217.64 34.7668 219.225 36.5323C220.881 38.2368 222.948 39.1013 225.325 39.1013C227.703 39.1013 229.768 38.249 231.364 36.5323ZM233.742 0.163818H241.607V46.2971H233.742V42.413C231.425 45.6396 228.135 47.2345 223.86 47.2345C219.585 47.2345 216.247 45.5909 213.304 42.2304C210.434 38.8699 208.982 34.7181 208.982 29.8479C208.982 24.9777 210.446 20.8867 213.304 17.5262C216.222 14.1657 219.765 12.4611 223.86 12.4611C227.955 12.4611 231.425 14.044 233.742 17.2583V0.175994V0.163818ZM269.238 36.313C270.823 34.6085 271.616 32.4291 271.616 29.787C271.616 27.1449 270.823 24.9898 269.238 23.2609C267.654 21.5563 265.708 20.6919 263.318 20.6919C260.929 20.6919 258.996 21.5441 257.399 23.2609C255.873 25.0507 255.08 27.2057 255.08 29.787C255.08 32.3682 255.873 34.5232 257.399 36.313C258.984 38.0177 260.941 38.8822 263.318 38.8822C265.696 38.8822 267.642 38.0298 269.238 36.313ZM251.863 42.1696C248.765 38.809 247.227 34.7302 247.227 29.787C247.227 24.8437 248.753 20.8257 251.863 17.4653C254.972 14.1049 258.815 12.4002 263.318 12.4002C267.822 12.4002 271.676 14.1049 274.774 17.4653C277.884 20.8257 279.469 24.9777 279.469 29.787C279.469 34.5964 277.884 38.809 274.774 42.1696C271.664 45.53 267.882 47.1737 263.318 47.1737C258.755 47.1737 254.96 45.53 251.863 42.1696ZM313.5 26.0248V46.2605H305.635V27.084C305.635 24.9045 305.094 23.2609 303.978 22.019C302.945 20.8988 301.48 20.3144 299.594 20.3144C295.152 20.3144 292.894 23.0173 292.894 28.4842V46.2727H285.029V13.3499H292.894V17.0513C294.779 13.9587 297.781 12.4368 301.973 12.4368C305.322 12.4368 308.072 13.6179 310.211 16.0529C312.408 18.4881 313.5 21.7877 313.5 26.0612" fill="black"/><defs><linearGradient id="paint0_linear_612_176" x1="37.121" y1="0.175659" x2="37.121" y2="79.3169" gradientUnits="userSpaceOnUse"><stop stop-color="#6364FF"/><stop offset="1" stop-color="#563ACC"/></linearGradient></defs></svg>
-		<h2 id="configurator">Mastodon Share Button Configurator</h2>
-		<p>Use the configurator below to customize your Mastodon Share button styling.</p>
-		<p>Select Logo:<br/>
+		<div id="translate"></div>
+		<header>
+			<svg width="314" height="80" viewBox="0 0 314 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M73.4455 17.6962C72.3169 9.19775 65.0038 2.48901 56.346 1.19841C54.8811 0.979247 49.3453 0.175659 36.5206 0.175659H36.4245C23.5879 0.175659 20.838 0.979247 19.373 1.19841C10.9433 2.46467 3.25813 8.4794 1.38487 17.0875C0.496264 21.3246 0.400199 26.0244 0.568313 30.3345C0.808475 36.5198 0.856508 42.6805 1.40888 48.8414C1.79314 52.9325 2.45359 56.9869 3.40223 60.9804C5.17943 68.3588 12.3603 74.4954 19.3971 76.9914C26.9261 79.5969 35.0317 80.0352 42.7888 78.2453C43.6414 78.0385 44.482 77.8071 45.3226 77.5392C47.2079 76.9304 49.4173 76.2486 51.0504 75.0555C51.0745 75.0432 51.0865 75.0189 51.0985 74.9945C51.1105 74.9702 51.1225 74.9458 51.1225 74.9093V68.9433C51.1225 68.9433 51.1225 68.8946 51.0985 68.8702C51.0985 68.8459 51.0745 68.8215 51.0504 68.8093C51.0264 68.7972 51.0024 68.785 50.9785 68.7728C50.9543 68.7728 50.9304 68.7728 50.9064 68.7728C45.9349 69.9783 40.8316 70.587 35.7281 70.5748C26.9261 70.5748 24.5605 66.3377 23.8881 64.5844C23.3477 63.0625 22.9995 61.4675 22.8554 59.8603C22.8554 59.8359 22.8554 59.8116 22.8674 59.7873C22.8674 59.7629 22.8914 59.7386 22.9155 59.7263C22.9394 59.7142 22.9634 59.702 22.9874 59.6899H23.0715C27.9588 60.883 32.9782 61.4918 38.0096 61.4918C39.2225 61.4918 40.4232 61.4918 41.6361 61.4554C46.6915 61.3092 52.0232 61.0535 57.0065 60.0673C57.1265 60.0429 57.2587 60.0186 57.3667 59.9943C65.2201 58.4601 72.6891 53.6629 73.4455 41.5117C73.4697 41.0369 73.5417 36.4954 73.5417 36.0084C73.5417 34.3159 74.082 24.0398 73.4576 17.7207L73.4455 17.6962Z" fill="url(#paint0_linear_612_176)"/><path d="M15.3145 22.4452C15.3145 19.9613 17.2718 17.9646 19.6974 17.9646C22.1231 17.9646 24.0803 19.9735 24.0803 22.4452C24.0803 24.9168 22.1231 26.9257 19.6974 26.9257C17.2718 26.9257 15.3145 24.9168 15.3145 22.4452Z" fill="white"/><path d="M80.5188 26.3048V46.9058H72.5334V26.9136C72.5334 22.7008 70.8042 20.57 67.3338 20.57C63.5033 20.57 61.5699 23.1148 61.5699 28.1189V39.0647H53.6446V28.1189C53.6446 23.0904 51.7353 20.57 47.8807 20.57C44.4224 20.57 42.6811 22.7008 42.6811 26.9136V46.8937H34.7078V26.3048C34.7078 22.1042 35.7525 18.7559 37.8539 16.2721C40.0274 13.7883 42.8733 12.5342 46.3916 12.5342C50.4744 12.5342 53.5725 14.1413 55.614 17.3557L57.6073 20.7649L59.6007 17.3557C61.642 14.1536 64.7281 12.5342 68.8229 12.5342C72.3412 12.5342 75.1872 13.8005 77.3607 16.2721C79.4621 18.7559 80.5068 22.0798 80.5068 26.3048H80.5188ZM107.993 36.5444C109.65 34.7546 110.431 32.5386 110.431 29.8357C110.431 27.1327 109.638 24.8924 107.993 23.1879C106.408 21.398 104.391 20.5457 101.953 20.5457C99.5156 20.5457 97.5102 21.398 95.9132 23.1879C94.3281 24.8924 93.5356 27.1327 93.5356 29.8357C93.5356 32.5386 94.3281 34.7789 95.9132 36.5444C97.4982 38.2489 99.5156 39.1135 101.953 39.1135C104.391 39.1135 106.396 38.2612 107.993 36.5444ZM110.431 13.3622H118.296V46.3093H110.431V42.4253C108.053 45.6517 104.763 47.2468 100.488 47.2468C96.2134 47.2468 92.9232 45.603 90.0052 42.2426C87.1353 38.8822 85.6823 34.7302 85.6823 29.86C85.6823 24.9898 87.1472 20.8988 90.0052 17.5383C92.9352 14.1779 96.4176 12.4734 100.488 12.4734C104.559 12.4734 108.053 14.0562 110.431 17.2705V13.3865V13.3622ZM144.762 29.2148C147.08 31.0045 148.233 33.5006 148.173 36.654C148.173 40.0144 147.02 42.6566 144.642 44.4829C142.265 46.2727 139.394 47.1858 135.912 47.1858C129.632 47.1858 125.369 44.5438 123.111 39.357L129.933 35.2051C130.844 38.0298 132.851 39.4909 135.912 39.4909C138.722 39.4909 140.115 38.5778 140.115 36.6661C140.115 35.2782 138.289 34.0241 134.567 33.05C133.162 32.6604 131.998 32.2586 131.097 31.9299C129.812 31.4064 128.719 30.8097 127.806 30.0792C125.549 28.2894 124.397 25.9273 124.397 22.8956C124.397 19.6691 125.489 17.1 127.687 15.2494C129.945 13.3378 132.694 12.4246 135.984 12.4246C141.231 12.4246 145.062 14.7258 147.572 19.4012L140.872 23.346C139.899 21.1058 138.241 19.9856 135.984 19.9856C133.606 19.9856 132.454 20.8988 132.454 22.6886C132.454 24.0767 134.279 25.3308 138.002 26.3048C140.872 26.9623 143.129 27.9485 144.762 29.2148H144.774H144.762ZM169.764 21.5198H162.87V35.2295C162.87 36.8731 163.483 37.8715 164.648 38.3221C165.5 38.6508 167.206 38.7116 169.776 38.5899V46.2971C164.48 46.9545 160.637 46.4188 158.38 44.6533C156.122 42.9487 155.029 39.771 155.029 35.2416V21.5198H149.733V13.3499H155.029V6.7021L162.894 4.13305V13.3622H169.788V21.532H169.776L169.764 21.5198ZM194.836 36.3496C196.422 34.6451 197.213 32.4656 197.213 29.8236C197.213 27.1814 196.422 25.0264 194.836 23.2974C193.239 21.5928 191.293 20.7283 188.916 20.7283C186.538 20.7283 184.593 21.5807 182.996 23.2974C181.471 25.0872 180.678 27.2423 180.678 29.8236C180.678 32.4047 181.471 34.5598 182.996 36.3496C184.581 38.0542 186.538 38.9186 188.916 38.9186C191.293 38.9186 193.239 38.0664 194.836 36.3496ZM177.461 42.206C174.35 38.8456 172.826 34.7668 172.826 29.8236C172.826 24.8802 174.35 20.8623 177.461 17.5019C180.571 14.1413 184.413 12.4368 188.916 12.4368C193.419 12.4368 197.274 14.1413 200.372 17.5019C203.47 20.8623 205.067 25.0141 205.067 29.8236C205.067 34.6328 203.47 38.8456 200.372 42.206C197.261 45.5666 193.48 47.2102 188.916 47.2102C184.353 47.2102 180.559 45.5666 177.461 42.206ZM231.364 36.5323C232.95 34.7425 233.742 32.5265 233.742 29.8236C233.742 27.1206 232.95 24.8802 231.364 23.1756C229.78 21.3858 227.763 20.5336 225.325 20.5336C222.888 20.5336 220.869 21.3858 219.225 23.1756C217.64 24.8802 216.847 27.1206 216.847 29.8236C216.847 32.5265 217.64 34.7668 219.225 36.5323C220.881 38.2368 222.948 39.1013 225.325 39.1013C227.703 39.1013 229.768 38.249 231.364 36.5323ZM233.742 0.163818H241.607V46.2971H233.742V42.413C231.425 45.6396 228.135 47.2345 223.86 47.2345C219.585 47.2345 216.247 45.5909 213.304 42.2304C210.434 38.8699 208.982 34.7181 208.982 29.8479C208.982 24.9777 210.446 20.8867 213.304 17.5262C216.222 14.1657 219.765 12.4611 223.86 12.4611C227.955 12.4611 231.425 14.044 233.742 17.2583V0.175994V0.163818ZM269.238 36.313C270.823 34.6085 271.616 32.4291 271.616 29.787C271.616 27.1449 270.823 24.9898 269.238 23.2609C267.654 21.5563 265.708 20.6919 263.318 20.6919C260.929 20.6919 258.996 21.5441 257.399 23.2609C255.873 25.0507 255.08 27.2057 255.08 29.787C255.08 32.3682 255.873 34.5232 257.399 36.313C258.984 38.0177 260.941 38.8822 263.318 38.8822C265.696 38.8822 267.642 38.0298 269.238 36.313ZM251.863 42.1696C248.765 38.809 247.227 34.7302 247.227 29.787C247.227 24.8437 248.753 20.8257 251.863 17.4653C254.972 14.1049 258.815 12.4002 263.318 12.4002C267.822 12.4002 271.676 14.1049 274.774 17.4653C277.884 20.8257 279.469 24.9777 279.469 29.787C279.469 34.5964 277.884 38.809 274.774 42.1696C271.664 45.53 267.882 47.1737 263.318 47.1737C258.755 47.1737 254.96 45.53 251.863 42.1696ZM313.5 26.0248V46.2605H305.635V27.084C305.635 24.9045 305.094 23.2609 303.978 22.019C302.945 20.8988 301.48 20.3144 299.594 20.3144C295.152 20.3144 292.894 23.0173 292.894 28.4842V46.2727H285.029V13.3499H292.894V17.0513C294.779 13.9587 297.781 12.4368 301.973 12.4368C305.322 12.4368 308.072 13.6179 310.211 16.0529C312.408 18.4881 313.5 21.7877 313.5 26.0612" fill="black"/><defs><linearGradient id="paint0_linear_612_176" x1="37.121" y1="0.175659" x2="37.121" y2="79.3169" gradientUnits="userSpaceOnUse"><stop stop-color="#6364FF"/><stop offset="1" stop-color="#563ACC"/></linearGradient></defs></svg>
+			<h2 id="configurator" class="l10n">Mastodon Share Button Configurator</h2>
+		<header>
+		<p class="l10n">Use the configurator below to customize your Mastodon Share button styling.</p>
+		<p><span class="l10n">Select Logo</span>:<br/>
 		<select id="some_logo_choice">
-			<option value="full-white" selected>White Text with Black Icon</option>
-			<option value="full-black">Black Text with White Icon</option>
-			<option value="wordmark-white-text">White Text with Color Icon</option>
-			<option value="wordmark-black-text">Black Text with Color Icon</option>
-			<option value="white">White Icon</option>
-			<option value="black">Black Icon</option>
-			<option value="purple">Color Icon</option>
+			<option class="l10n" value="full-white" selected>White Text with Black Icon</option>
+			<option class="l10n" value="full-black">Black Text with White Icon</option>
+			<option class="l10n" value="wordmark-white-text">White Text with Color Icon</option>
+			<option class="l10n" value="wordmark-black-text">Black Text with Color Icon</option>
+			<option class="l10n" value="white">White Icon</option>
+			<option class="l10n" value="black">Black Icon</option>
+			<option class="l10n" value="purple">Color Icon</option>
 		<select><br/>
-		Select Background Color/Rollover:<br/>
+		<span class="l10n">Select Background Color/Rollover</span>:<br/>
 		<select id="some_color_choice">
 			<option value="black">Black/Dark Gray</option>
 			<option value="white">White/Light Gray</option>
@@ -112,7 +127,7 @@
 			<option value="darkblue">Dark Blue/Light Blue</option>
 			<option value="lightblue">Light Blue/Dark Blue</option>
 		</select><br/>
-		Select Button Height Size:<br/>
+			<span class="l10n">Select Button Height Size</span>:<br/>
 		<select id="some_size_choice">
 			<option value="20">20px*</option>
 			<option value="24">24px</option>
@@ -125,32 +140,32 @@
 			<option value="72">72px</option>
 		</select>
 		<br/>
-		<small style="font-size: smaller;">* These are the same heights as Facebook Share buttons</small>
+		<small class="l10n" style="font-size: smaller;">* These are the same heights as Facebook Share buttons</small>
 		</p>
-		<div class="mybutton" onclick="some.configurator();">Generate Code</div>
+		<div class="mybutton l10n" onclick="some.configurator();">Generate Code</div>
 
-		<p>Preview:</p>
+		<p class="l10n">Preview:</p>
 		<div id="some_button_preview" style="border:1px solid black;min-height:100px;padding:30px;box-sizing:border-box;">
 			<div class="mastodon" data-logo="full-white" data-color="blurple" data-size="32"></div>
 		</div>
 
 		<div id="some_generated_code" style="display:none;">
 			<p>
-			<strong>Step 1:</strong>Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:
+			<strong class="l10n">Step 1:</strong> <span class="l10n">Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:</span>
 			<pre class="code"><textarea id="cdn_script2" readonly><script type="text/javascript" language="javascript" src="https://cdn.jsdelivr.net/gh/kmhcreative/Share-on-Mastodon-Easily@main/some.js"></script></textarea></pre>
-			<div class="mybutton copybutton" onclick="some.copycode('cdn_script2');" style="display:none;">Copy</div>
+			<div class="mybutton copybutton l10n" onclick="some.copycode('cdn_script2');" style="display:none;">Copy</div>
 			</p>
 			<p>
-			<strong>Step 2:</strong> Place this code where ever you want the button to appear on your page:
+			<strong class="l10n">Step 2:</strong> <span class="l10n">Place this code where ever you want the button to appear on your page:</span>
 			<pre class="code"><textarea id="some_button_code" readonly></textarea></pre>
-			<div class="mybutton copybutton" onclick="some.copycode('some_button_code');" style="display:none;">Copy</div>
+			<div class="mybutton copybutton l10n" onclick="some.copycode('some_button_code');" style="display:none;">Copy</div>
 			</p>
 		</div>
 		<hr/>
-		<small style="margin-top:20px;text-align:center;">This page is part of <a href="https://github.com/kmhcreative/Share-on-Mastodon-Easily">Share On Mastodon Easily</a>, which is not an official Mastodon project.</small>	
-		<small style="margin-top:20px;text-align:center;">Mastodon logos and icons are the property of <a href="https://joinmastodon.org/about" target="_blank">Mastodon gGmbH</a>, a German non-profit company.</small>
+	<small style="margin-top:20px;text-align:center;"><span class="l10n">This page is part of</span> <a href="https://github.com/kmhcreative/Share-on-Mastodon-Easily">Share On Mastodon Easily</a>, <span class="l10n">which is not an official Mastodon project</span>.</small>	
+	<small style="margin-top:20px;text-align:center;"><span class="l10n">Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company.</span>[<a href="https://www.joinmastodon.org" target="_blank">link</a>]</small>
 
-		<script type="text/javascript">
+	<script type="text/javascript">
 		var some = some || {};
 			some.configurator = function(){
 				document.getElementById('some_generated_code').style.display = "block";
@@ -172,7 +187,671 @@
 				  copybuttons[c].style.display = "inline-block";
 			 };
 		} ;
-		console.log(document.currentScript.src);
-		</script>
+		some.settings.language = 'en'; // holding pen, use some.localize.setlanguage('xx') to set document language onload
+		some.localize = {
+			 codes : [
+				['da','Dansk'],			// Danish
+				['de','Deutsch'],		// German
+				['el','ελληνικά'],		// Greek
+				['en','English'],		// English
+				['es','Español'],		// Spanish
+				['fi','Suomi'],			// Finnish
+				['fr','Français'],		// French
+				['hi','हिन्दी'],			// Hindi
+				['it','Italiano'],		// Italian
+				['ja','日本語 '],			// Japanese
+				['ko','한국어'],			// Korean
+				['no','Norsk'],			// Norwegian
+				['pt','Português'],		// Portuguese
+				['ru','Русский язык'],	// Russian
+				['sv','Svenska'],		// Swedish
+				['zh_HANS','简体中文'],	// Chinese (Simplified)
+				['zh_HANT','繁體中文']	// Chinese (Traditional)
+			],
+			/*	TRANSLATIONS
+				These were run through Google Translate and, as such, may not be accurate.
+				If you know one of these languages and see the translation is wrong, please 
+				edit the file on GitHub and submit a Pull Request for your changes.
+				
+				You can also programmatically override translations or define new ones via:
+				
+				some.localize.matrix['xx'] = {
+					"English Text" : "Translated Text",
+					...
+				};
+				
+				Where "xx" is the two-letter country code.
+				
+				To add your country code to the drop-down list:
+				some.localize.codes.push(['xx','Xanduan']);
+				some.localize.langpicker();
+			*/
+			matrix : {
+				// Danish
+				"da" : {
+					"Mastodon Share Button Configurator" : "Mastodon Share Button Configurator",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "Brug konfiguratoren nedenfor til at tilpasse din Mastodon Share Button-styling.",
+					"Select Logo" : "Vælg Logo",
+					"White Text with Black Icon" : "Hvid tekst med sort ikon",
+					"Black Text with White Icon" : "Sort tekst med hvidt ikon",
+					"White Text with Color Icon" : "Hvid tekst med farveikon",
+					"Black Text with Color Icon" : "Sort tekst med farveikon",
+					"White Icon" : "Hvidt ikon",
+					"Black Icon" : "Sort ikon",
+					"Color Icon" : "Farve ikon",
+					"Select Background Color/Rollover" : "Vælg Baggrundsfarve/Rollover",
+					"Black/Dark Gray" : "Sort/Mørkegrå",
+					"White/Light Gray" : "Hvid/Lysegrå",
+					"Midnight Blue/Black" : "Midnatsblå/sort",
+					"Blue/Purple" : "Blå/lilla",
+					"Dark Blue/Light Blue" : "Mørkeblå/Lyseblå",
+					"Light Blue/Dark Blue" : "Lyseblå/Mørkeblå",
+					"Select Button Height Size" : "Vælg knaphøjdestørrelse",
+					"* These are the same heights as Facebook Share buttons" : "* Disse er de samme højder som Facebook Share-knapper",
+					"Generate Code" : "Generer kode",
+					"Preview:" : "Eksempel:",
+					"Step 1:" : "Trin 1:",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "Placer denne kode EN gang i HOVEDET på dit websted for at indlæse scriptet med jsDelivr CDN:",
+					"Step 2:" : "Trin 2:",
+					"Place this code where ever you want the button to appear on your page:" : "Placer denne kode hvor som helst du ønsker, at knappen skal vises på din side:",
+					"Copy" : "Kopi",
+					"This page is part of" : "Denne side er en del af",
+					"which is not an official Mastodon project" : "som ikke er et officielt Mastodon-projekt",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company" : "Mastodon logoer og ikoner tilhører Mastodon gGmbH, en tysk non-profit virksomhed"			
+				
+				},
+				// German
+				"de" : {
+					"Mastodon Share Button Configurator" : "Mastodon Share Button Konfigurator",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "Verwenden Sie den Konfigurator unten, um das Design Ihres Mastodon Share Buttons anzupassen.",
+					"Select Logo" : "Wählen Sie Logo",
+					"White Text with Black Icon" : "Weißer Text mit schwarzem Symbol",
+					"Black Text with White Icon" : "Schwarzer Text mit weißem Symbol",
+					"White Text with Color Icon" : "Weißer Text mit Farbsymbol",
+					"Black Text with Color Icon" : "Schwarzer Text mit Farbsymbol",
+					"White Icon" : "Weißes Symbol",
+					"Black Icon" : "Schwarzes Symbol",
+					"Color Icon" : "Farbsymbol",
+					"Select Background Color/Rollover" : "Wählen Sie Hintergrundfarbe/Rollover",
+					"Black/Dark Gray" : "Schwarz/Dunkelgrau",
+					"White/Light Gray" : "Weiß/Hellgrau",
+					"Midnight Blue/Black" : "Mitternachtsblau/Schwarz",
+					"Blue/Purple" : "Blau Lila",
+					"Dark Blue/Light Blue" : "Dunkelblau/Hellblau",
+					"Light Blue/Dark Blue" : "Hellblau/Dunkelblau",
+					"Select Button Height Size" : "Wählen Sie Größe der Schaltflächenhöhe aus",
+					"* These are the same heights as Facebook Share buttons" : "* Dies sind die gleichen Höhen wie die Schaltflächen zum Teilen auf Facebook",
+					"Generate Code" : "Code generieren",
+					"Preview:" : "Vorschau:",
+					"Step 1:" : "Schritt 1:",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "Platzieren Sie diesen Code EINMAL im HEAD Ihrer Website, um das Skript mit jsDelivr CDN zu laden:",
+					"Step 2:" : "Schritt 2:",
+					"Place this code where ever you want the button to appear on your page:" : "Platzieren Sie diesen Code überall dort, wo die Schaltfläche auf Ihrer Seite erscheinen soll:",
+					"Copy" : "Kopieren",
+					"This page is part of" : "Diese Seite ist Teil von",
+					"which is not an official Mastodon project" : "das kein offizielles Mastodon-Projekt ist",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company." : "Mastodon-Logos und -Symbole sind Eigentum der Mastodon gGmbH, einer deutschen gemeinnützigen Gesellschaft"			
+				
+				},
+				// Greek
+				"el" : {
+					"Mastodon Share Button Configurator" : "Mastodon Share Button Configurator",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "Χρησιμοποιήστε τον παρακάτω διαμορφωτή για να προσαρμόσετε το στυλ Mastodon Share Button.",
+					"Select Logo" : "Επιλέξτε Λογότυπο",
+					"White Text with Black Icon" : "Λευκό κείμενο με μαύρο εικονίδιο",
+					"Black Text with White Icon" : "Μαύρο κείμενο με λευκό εικονίδιο",
+					"White Text with Color Icon" : "Λευκό κείμενο με έγχρωμο εικονίδιο",
+					"Black Text with Color Icon" : "Μαύρο κείμενο με έγχρωμο εικονίδιο",
+					"White Icon" : "Λευκό εικονίδιο",
+					"Black Icon" : "Μαύρο εικονίδιο",
+					"Color Icon" : "Χρώμα εικονίδιο",
+					"Select Background Color/Rollover" : "Επιλέξτε Χρώμα φόντου/Ανακύλιση",
+					"Black/Dark Gray" : "Μαύρο/Σκούρο Γκρι",
+					"White/Light Gray" : "Λευκό/Ανοικτό Γκρι",
+					"Midnight Blue/Black" : "Midnight Blue/Black",
+					"Blue/Purple" : "Μπλε/Μωβ",
+					"Dark Blue/Light Blue" : "Σκούρο Μπλε/Ανοικτό Μπλε",
+					"Light Blue/Dark Blue" : "Ανοιχτό Μπλε/Σκούρο Μπλε",
+					"Select Button Height Size" : "Επιλέξτε Μέγεθος ύψους κουμπιού",
+					"* These are the same heights as Facebook Share buttons" : "* Αυτά είναι τα ίδια ύψη με τα κουμπιά Facebook Share",
+					"Generate Code" : "Δημιουργία κώδικα",
+					"Preview:" : "Προεπισκόπηση:",
+					"Step 1:" : "Βήμα 1:",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "Τοποθετήστε αυτόν τον κωδικό ΜΙΑ ΦΟΡΑ στο HEAD του ιστότοπού σας για να φορτώσετε το σενάριο με το jsDelivr CDN:",
+					"Step 2:" : "Βήμα 2:",
+					"Place this code where ever you want the button to appear on your page:" : "Τοποθετήστε αυτόν τον κωδικό όπου θέλετε να εμφανίζεται το κουμπί στη σελίδα σας:",
+					"Copy" : "αντίγραφο",
+					"This page is part of" : "Αυτή η σελίδα είναι μέρος του ",
+					"which is not an official Mastodon project" : "που δεν είναι επίσημο έργο Mastodon",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company." : "Τα λογότυπα και τα εικονίδια Mastodon είναι ιδιοκτησία της Mastodon gGmbH, μιας γερμανικής μη κερδοσκοπικής εταιρείας"			
+				
+				},
+				// English
+				"en" : {
+					"Mastodon Share Button Configurator" : "Mastodon Share Button Configurator",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "Use the configurator below to customize your Mastodon Share Button styling.",
+					"Select Logo" : "Select Logo",
+					"White Text with Black Icon" : "White Text with Black Icon",
+					"Black Text with White Icon" : "Black Text with White Icon",
+					"White Text with Color Icon" : "White Text with Color Icon",
+					"Black Text with Color Icon" : "Black Text with Color Icon",
+					"White Icon" : "White Icon",
+					"Black Icon" : "Black Icon",
+					"Color Icon" : "Color Icon",
+					"Select Background Color/Rollover" : "Select Background Color/Rollover",
+					"Black/Dark Gray" : "Black/Dark Gray",
+					"White/Light Gray" : "White/Light Gray",
+					"Midnight Blue/Black" : "Midnight Blue/Black",
+					"Blue/Purple" : "Blue/Purple",
+					"Dark Blue/Light Blue" : "Dark Blue/Light Blue",
+					"Light Blue/Dark Blue" : "Light Blue/Dark Blue",
+					"Select Button Height Size" : "Select Button Height Size",
+					"* These are the same heights as Facebook Share buttons" : "* These are the same heights as Facebook Share buttons",
+					"Generate Code" : "Generate Code",
+					"Preview:" : "Preview:",
+					"Step 1:" : "Step 1:",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "Place this code ONCE in the HEAD of your website to load the script with jsDelivr CDN:",
+					"Step 2:" : "Step 2:",
+					"Place this code where ever you want the button to appear on your page:" : "Place this code where ever you want the button to appear in your page:",
+					"Copy" : "Copy",
+					"This page is part of" : "This page is part of",
+					"which is not an official Mastodon project" : "which is not an official Mastodon project",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company." : "Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company"			
+				},
+				// Spanish
+				"es" : {
+					"Mastodon Share Button Configurator" : "Configurador del botón de compartir Mastodon",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "Utilice el configurador a continuación para personalizar el estilo de su botón Compartir de Mastodon.",
+					"Select Logo" : "Seleccionar logotipo",
+					"White Text with Black Icon" : "Texto blanco con icono negro",
+					"Black Text with White Icon" : "Texto negro con icono blanco",
+					"White Text with Color Icon" : "Texto blanco con icono de color",
+					"Black Text with Color Icon" : "Texto negro con icono de color",
+					"White Icon" : "Icono blanco",
+					"Black Icon" : "icono negro",
+					"Color Icon" : "icono de color",
+					"Select Background Color/Rollover" : "Seleccionar color de fondo/cambio",
+					"Black/Dark Gray" : "Negro/Gris Oscuro",
+					"White/Light Gray" : "Blanco/Gris Claro",
+					"Midnight Blue/Black" : "Azul medianoche/Negro",
+					"Blue/Purple" : "Azul/púrpura",
+					"Dark Blue/Light Blue" : "Azul oscuro/Azul claro",
+					"Light Blue/Dark Blue" : "Azul claro/Azul oscuro",
+					"Select Button Height Size" : "Seleccione el tamaño de la altura del botón",
+					"* These are the same heights as Facebook Share buttons" : "* Estas son las mismas alturas que los botones Compartir de Facebook",
+					"Generate Code" : "Generar codigo",
+					"Preview:" : "Avance:",
+					"Step 1:" : "Paso 1:",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "Coloque este código UNA VEZ en el HEAD de su sitio web para cargar el script con jsDelivr CDN:",
+					"Step 2:" : "Paso 2:",
+					"Place this code where ever you want the button to appear on your page:" : "Coloca este código donde quieras que aparezca el botón en tu página:",
+					"Copy" : "Copiar",
+					"This page is part of" : "Esta página es parte de",
+					"which is not an official Mastodon project" : "que no es un proyecto oficial de Mastodon",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company." : "Los logotipos e iconos de Mastodon son propiedad de Mastodon gGmbH, una empresa alemana sin ánimo de lucro."			
+				
+				},
+				// Finnish
+				"fi" : {
+					"Mastodon Share Button Configurator" : "Mastodon Share Button Configurator",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "Käytä alla olevaa konfiguraattoria muokataksesi Mastodon Share Button -tyyliäsi.",
+					"Select Logo" : "Valitse Logo",
+					"White Text with Black Icon" : "Valkoinen teksti mustalla kuvakkeella",
+					"Black Text with White Icon" : "Musta teksti valkoisella kuvakkeella",
+					"White Text with Color Icon" : "Valkoinen teksti värikuvakkeella",
+					"Black Text with Color Icon" : "Musta teksti värikuvakkeella",
+					"White Icon" : "Valkoinen kuvake",
+					"Black Icon" : "Musta ikoni",
+					"Color Icon" : "Väri-kuvake",
+					"Select Background Color/Rollover" : "Valitse Taustaväri/Rollover",
+					"Black/Dark Gray" : "Musta/Tummanharmaa",
+					"White/Light Gray" : "Valkoinen/vaaleanharmaa",
+					"Midnight Blue/Black" : "Keskiyön sininen/musta",
+					"Blue/Purple" : "Sininen/violetti",
+					"Dark Blue/Light Blue" : "Tummansininen/vaaleansininen",
+					"Light Blue/Dark Blue" : "Vaaleansininen/Tummansininen",
+					"Select Button Height Size" : "Valitse Painikkeen korkeuskoko",
+					"* These are the same heights as Facebook Share buttons" : "* Nämä ovat samaa korkeutta kuin Facebook Share -painikkeet",
+					"Generate Code" : "Luo koodi",
+					"Preview:" : "Esikatselu:",
+					"Step 1:" : "Vaihe 1:",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "Aseta tämä koodi KERRAN verkkosivustosi HEADiin ladataksesi komentosarjan jsDelivr CDN:llä:",
+					"Step 2:" : "Vaihe 2:",
+					"Place this code where ever you want the button to appear on your page:" : "Sijoita tämä koodi sinne, missä haluat painikkeen näkyvän sivullasi:",
+					"Copy" : "Kopio",
+					"This page is part of" : "Tämä sivu on osa",
+					"which is not an official Mastodon project" : "-ohjelmaa, joka ei ole virallinen Mastodon-projekti",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company." : "Mastodonin logot ja kuvakkeet ovat saksalaisen voittoa tavoittelemattoman Mastodon gGmbH:n omaisuutta"			
+				
+				},
+				// French
+				"fr" : {
+					"Mastodon Share Button Configurator" : "Configurateur de bouton de partage Mastodon",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "Utilisez le configurateur ci-dessous pour personnaliser le style de votre bouton de partage Mastodon.",
+					"Select Logo" : "Sélectionner un logo",
+					"White Text with Black Icon" : "Texte blanc avec icône noire",
+					"Black Text with White Icon" : "Texte noir avec icône blanche",
+					"White Text with Color Icon" : "Texte blanc avec icône de couleur",
+					"Black Text with Color Icon" : "Texte noir avec icône de couleur",
+					"White Icon" : "Icône blanche",
+					"Black Icon" : "Icône noire",
+					"Color Icon" : "Icône de couleur",
+					"Select Background Color/Rollover" : "Sélectionnez la couleur d'arrière-plan/le survol",
+					"Black/Dark Gray" : "Noir/Gris Foncé",
+					"White/Light Gray" : "Blanc/Gris clair",
+					"Midnight Blue/Black" : "Bleu Nuit/Noir",
+					"Blue/Purple" : "Bleu/violet",
+					"Dark Blue/Light Blue" : "Bleu foncé/Bleu clair",
+					"Light Blue/Dark Blue" : "Bleu clair/Bleu foncé",
+					"Select Button Height Size" : "Sélectionnez la taille de la hauteur du bouton",
+					"* These are the same heights as Facebook Share buttons" : "* Ce sont les mêmes hauteurs que les boutons de partage Facebook",
+					"Generate Code" : "Générer du code",
+					"Preview:" : "Aperçu:",
+					"Step 1:" : "Étape 1:",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "Placez ce code UNE FOIS dans le HEAD de votre site Web pour charger le script avec jsDelivr CDN :",
+					"Step 2:" : "Étape 2:",
+					"Place this code where ever you want the button to appear on your page:" : "Placez ce code là où vous voulez que le bouton apparaisse dans votre page :",
+					"Copy" : "Copie",
+					"This page is part of" : "Cette page fait partie de",
+					"which is not an official Mastodon project" : "qui n'est pas un projet officiel de Mastodon",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company." : "Les logos et icônes Mastodon sont la propriété de Mastodon gGmbH, une société allemande à but non lucratif"			
+				
+				},
+				// Hindi
+				"hi" : {
+					"Mastodon Share Button Configurator" : "मास्टोडन शेयर बटन विन्यासकर्ता",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "अपने मास्टोडन शेयर बटन स्टाइल को अनुकूलित करने के लिए नीचे दिए गए विन्यासकर्ता का उपयोग करें।",
+					"Select Logo" : "लोगो का चयन करें",
+					"White Text with Black Icon" : "काले चिह्न के साथ सफेद पाठ",
+					"Black Text with White Icon" : "सफेद चिह्न के साथ काला पाठ",
+					"White Text with Color Icon" : "सफेद पाठ रंग चिह्न के साथ",
+					"Black Text with Color Icon" : "रंग चिह्न के साथ काला पाठ",
+					"White Icon" : "सफेद चिह्न",
+					"Black Icon" : "काला चिह्न",
+					"Color Icon" : "रंग चिह्न",
+					"Select Background Color/Rollover" : "बैकग्राउंड कलर/रोलओवर चुनें",
+					"Black/Dark Gray" : "काला/डार्क ग्रे",
+					"White/Light Gray" : "सफेद / हल्का ग्रे",
+					"Midnight Blue/Black" : "आधी रात नीला / काला",
+					"Blue/Purple" : "नीला / बैंगनी",
+					"Dark Blue/Light Blue" : "गहरा नीला / हल्का नीला",
+					"Light Blue/Dark Blue" : "हल्का नीला / गहरा नीलाe",
+					"Select Button Height Size" : "बटन की ऊंचाई का आकार चुनें",
+					"* These are the same heights as Facebook Share buttons" : "* ये फेसबुक शेयर बटन के समान ऊंचाई हैं",
+					"Generate Code" : "कोड जनरेट करें",
+					"Preview:" : "पूर्वावलोकन:",
+					"Step 1:" : "चरण 1:",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "रिप्ट को jsDelivr CDN के साथ लोड करने के लिए इस कोड को एक बार अपनी वेबसाइट के HEAD में डालें:",
+					"Step 2:" : "चरण दो:",
+					"Place this code where ever you want the button to appear on your page:" : "इस कोड को वहां रखें जहां आप चाहते हैं कि बटन आपके पेज में दिखाई दे:",
+					"Copy" : "प्रतिलिपि",
+					"This page is part of" : "यह पेज ",
+					"which is not an official Mastodon project" : "का हिस्सा है जो एक आधिकारिक मास्टोडॉन प्रोजेक्ट नहीं है",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company." : "मास्टोडन लोगो और आइकन एक जर्मन गैर-लाभकारी कंपनी मास्टोडन जीजीएमबीएच की संपत्ति हैं"			
+				
+				},
+				// Italian
+				"it" : {
+					"Mastodon Share Button Configurator" : "Configuratore pulsante Condividi Mastodon",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "Usa il configuratore qui sotto per personalizzare lo stile del tuo pulsante Condividi Mastodon.",
+					"Select Logo" : "Seleziona Logo",
+					"White Text with Black Icon" : "Testo bianco con icona nera",
+					"Black Text with White Icon" : "Testo nero con icona bianca",
+					"White Text with Color Icon" : "Testo bianco con icona a colori",
+					"Black Text with Color Icon" : "Testo nero con icona a colori",
+					"White Icon" : "Icona bianca",
+					"Black Icon" : "Icona nera",
+					"Color Icon" : "Icona del colore",
+					"Select Background Color/Rollover" : "Seleziona Colore di sfondo/Rollover",
+					"Black/Dark Gray" : "Nero/grigio scuro",
+					"White/Light Gray" : "Bianco/grigio chiaro",
+					"Midnight Blue/Black" : "Blu notte/nero",
+					"Blue/Purple" : "Blu/Viola",
+					"Dark Blue/Light Blue" : "Blu scuro/azzurro",
+					"Light Blue/Dark Blue" : "Blu chiaro/blu scuro",
+					"Select Button Height Size" : "Seleziona Dimensione altezza pulsante",
+					"* These are the same heights as Facebook Share buttons" : "* Queste sono le stesse altezze dei pulsanti Condividi di Facebook",
+					"Generate Code" : "Genera codice",
+					"Preview:" : "Anteprima:",
+					"Step 1:" : "Passo 1:",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "Inserisci questo codice UNA VOLTA nell'HEAD del tuo sito web per caricare lo script con jsDelivr CDN:",
+					"Step 2:" : "Passo 2:",
+					"Place this code where ever you want the button to appear on your page:" : "Posiziona questo codice dove vuoi che il pulsante appaia nella tua pagina:",
+					"Copy" : "Copia",
+					"This page is part of" : "Questa pagina fa parte di",
+					"which is not an official Mastodon project" : "che non è un progetto Mastodon ufficiale",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company." : "I loghi e le icone Mastodon sono di proprietà di Mastodon gGmbH, una società tedesca senza scopo di lucro"			
+				
+				},
+				// Japanese
+				"ja" : {
+					"Mastodon Share Button Configurator" : "Mastodon シェアボタン設定ツール",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "以下のコンフィギュレーターを使用して、Mastodon 共有ボタンのスタイルをカスタマイズします。",
+					"Select Logo" : "ロゴを選択",
+					"White Text with Black Icon" : "黒いアイコンに白いテキスト",
+					"Black Text with White Icon" : "黒のテキストに白のアイコン",
+					"White Text with Color Icon" : "カラー アイコン付きの白いテキスト",
+					"Black Text with Color Icon" : "黒のテキストとカラー アイコン",
+					"White Icon" : "白いアイコン",
+					"Black Icon" : "黒いアイコン",
+					"Color Icon" : "カラーアイコン",
+					"Select Background Color/Rollover" : "背景色の選択/ロールオーバー",
+					"Black/Dark Gray" : "ブラック/ダークグレー",
+					"White/Light Gray" : "ホワイト／ライトグレー",
+					"Midnight Blue/Black" : "ミッドナイトブルー／ブラック",
+					"Blue/Purple" : "ブルー/パープル",
+					"Dark Blue/Light Blue" : "ダークブルー/ライトブルー",
+					"Light Blue/Dark Blue" : "ライトブルー/ダークブルーe",
+					"Select Button Height Size" : "ボタンの高さのサイズを選択",
+					"* These are the same heights as Facebook Share buttons" : "※Facebookのシェアボタンと同じ高さです",
+					"Generate Code" : "コードの生成",
+					"Preview:" : "プレビュー:",
+					"Step 1:" : "ステップ1：",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "このコードを Web サイトの HEAD に 1 回配置して、スクリプトを jsDelivr CDN でロードします。",
+					"Step 2:" : "ステップ2：",
+					"Place this code where ever you want the button to appear on your page:" : "ページ内でボタンを表示したい場所に次のコードを配置します。",
+					"Copy" : "コピー",
+					"This page is part of" : "このページは公式のマストドンプロジェクトではない",
+					"which is not an official Mastodon project" : "の一部です",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company." : "Mastodon のロゴとアイコンは、ドイツの非営利団体である Mastodon gGmbH の所有物です。"			
+				
+				},
+				// Korean
+				"ko" : {
+					"Mastodon Share Button Configurator" : "Mastodon 공유 버튼 구성기",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "아래 구성기를 사용하여 Mastodon 공유 버튼 스타일을 사용자 지정하십시오.",
+					"Select Logo" : "로고 선택",
+					"White Text with Black Icon" : "검은색 아이콘이 있는 흰색 텍스트",
+					"Black Text with White Icon" : "흰색 아이콘이 있는 검은색 텍스트",
+					"White Text with Color Icon" : "색상 아이콘이 있는 흰색 텍스트",
+					"Black Text with Color Icon" : "색상 아이콘이 있는 검정 텍스트",
+					"White Icon" : "흰색 아이콘",
+					"Black Icon" : "블랙 아이콘",
+					"Color Icon" : "컬러 아이콘",
+					"Select Background Color/Rollover" : "배경색 선택/롤오버",
+					"Black/Dark Gray" : "블랙/다크 그레이",
+					"White/Light Gray" : "화이트/라이트 그레이",
+					"Midnight Blue/Black" : "미드나잇 블루/블랙",
+					"Blue/Purple" : "블루/퍼플",
+					"Dark Blue/Light Blue" : "다크 블루/라이트 블루",
+					"Light Blue/Dark Blue" : "라이트 블루/다크 블루",
+					"Select Button Height Size" : "버튼 높이 크기 선택",
+					"* These are the same heights as Facebook Share buttons" : "* Facebook 공유 버튼과 동일한 높이입니다.",
+					"Generate Code" : "코드 생성",
+					"Preview:" : "시사:",
+					"Step 1:" : "1 단계:",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "jsDelivr CDN으로 스크립트를 로드하려면 웹사이트의 HEAD에 이 코드를 한 번 배치하세요.",
+					"Step 2:" : "2 단계:",
+					"Place this code where ever you want the button to appear on your page:" : "페이지에서 버튼을 표시할 위치에 이 코드를 배치합니다.",
+					"Copy" : "복사",
+					"This page is part of" : "이 페이지는 공식 Mastodon 프로젝트가 아닌 ",
+					"which is not an official Mastodon project" : "의 일부입니다.",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company." : "Mastodon 로고 및 아이콘은 독일 비영리 회사인 Mastodon gGmbH의 자산입니다."			
+				
+				},
+				// Norwegian
+				"no" : {
+					"Mastodon Share Button Configurator" : "Mastodon Share Button Configurator",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "Bruk konfiguratoren nedenfor for å tilpasse din Mastodon Share Button-styling.",
+					"Select Logo" : "Velg Logo",
+					"White Text with Black Icon" : "Hvit tekst med svart ikon",
+					"Black Text with White Icon" : "Svart tekst med hvitt ikon",
+					"White Text with Color Icon" : "Hvit tekst med fargeikon",
+					"Black Text with Color Icon" : "Svart tekst med fargeikon",
+					"White Icon" : "Hvitt ikon",
+					"Black Icon" : "Svart ikon",
+					"Color Icon" : "Fargeikon",
+					"Select Background Color/Rollover" : "Velg Bakgrunnsfarge/Rullover",
+					"Black/Dark Gray" : "Svart/mørk grå",
+					"White/Light Gray" : "Hvit/lys grå",
+					"Midnight Blue/Black" : "Midnattsblå/svart",
+					"Blue/Purple" : "Blå/lilla",
+					"Dark Blue/Light Blue" : "Mørkeblå/Lyseblå",
+					"Light Blue/Dark Blue" : "Lyseblå/Mørkeblå",
+					"Select Button Height Size" : "Velg knappehøydestørrelse",
+					"* These are the same heights as Facebook Share buttons" : "* Dette er de samme høydene som Facebook Share-knapper",
+					"Generate Code" : "Generer kode",
+					"Preview:" : "Forhåndsvisning:",
+					"Step 1:" : "Trinn 1:",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "Plasser denne koden EN gang i HODET på nettstedet ditt for å laste skriptet med jsDelivr CDN:",
+					"Step 2:" : "Steg 2:",
+					"Place this code where ever you want the button to appear on your page:" : "Plasser denne koden der du vil at knappen skal vises på siden din:",
+					"Copy" : "Kopiere",
+					"This page is part of" : "Denne siden er en del av",
+					"which is not an official Mastodon project" : "som ikke er et offisielt Mastodon-prosjekt",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company." : "Mastodon logoer og ikoner tilhører Mastodon gGmbH, et tysk non-profit selskap"			
+				
+				},
+				// Portuguese
+				"pt" : {
+					"Mastodon Share Button Configurator" : "Configurador de botão de compartilhamento Mastodon",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "Use o configurador abaixo para personalizar o estilo do botão de compartilhamento do Mastodon.",
+					"Select Logo" : "Selecione o logotipo",
+					"White Text with Black Icon" : "Texto branco com ícone preto",
+					"Black Text with White Icon" : "Texto preto com ícone branco",
+					"White Text with Color Icon" : "Texto branco com ícone de cor",
+					"Black Text with Color Icon" : "Texto preto com ícone de cor",
+					"White Icon" : "Ícone Branco",
+					"Black Icon" : "ícone preto",
+					"Color Icon" : "ícone de cor",
+					"Select Background Color/Rollover" : "Selecione a cor de fundo/rollover",
+					"Black/Dark Gray" : "preto/cinza escuro",
+					"White/Light Gray" : "Branco/cinza claro",
+					"Midnight Blue/Black" : "Azul meia-noite/preto",
+					"Blue/Purple" : "Azul/Roxo",
+					"Dark Blue/Light Blue" : "Azul escuro/azul claro",
+					"Light Blue/Dark Blue" : "Azul claro/azul escuro",
+					"Select Button Height Size" : "Selecione o tamanho da altura do botão",
+					"* These are the same heights as Facebook Share buttons" : "* Estas são as mesmas alturas dos botões de compartilhamento do Facebook",
+					"Generate Code" : "Gerar Código",
+					"Preview:" : "Visualização:",
+					"Step 1:" : "Passo 1:",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "Coloque este código UMA VEZ no HEAD do seu site para carregar o script com jsDelivr CDN:",
+					"Step 2:" : "Passo 2:",
+					"Place this code where ever you want the button to appear on your page:" : "Coloque este código onde quiser que o botão apareça em sua página:",
+					"Copy" : "Cópia",
+					"This page is part of" : "Esta página faz parte do",
+					"which is not an official Mastodon project" : "que não é um projeto oficial do Mastodon",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company." : "Os logotipos e ícones do Mastodon são propriedade da Mastodon gGmbH, uma empresa alemã sem fins lucrativos"			
+				
+				},
+				// Russian
+				"ru" : {
+					"Mastodon Share Button Configurator" : "Конфигуратор кнопки «Поделиться» Mastodon",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "Используйте конфигуратор ниже, чтобы настроить стиль кнопки «Поделиться» Mastodon.",
+					"Select Logo" : "Выберите логотип",
+					"White Text with Black Icon" : "Белый текст с черным значком",
+					"Black Text with White Icon" : "Черный текст с белой иконкой",
+					"White Text with Color Icon" : "Белый текст с цветным значком",
+					"Black Text with Color Icon" : "Черный текст с цветным значком",
+					"White Icon" : "Белая икона",
+					"Black Icon" : "Черная икона",
+					"Color Icon" : "Значок цвета",
+					"Select Background Color/Rollover" : "Выберите цвет фона / ролловер",
+					"Black/Dark Gray" : "Черный/Темно-серый",
+					"White/Light Gray" : "Белый/светло-серый",
+					"Midnight Blue/Black" : "Полуночный синий/черный",
+					"Blue/Purple" : "Синий/Фиолетовый",
+					"Dark Blue/Light Blue" : "Темно-синий/светло-синий",
+					"Light Blue/Dark Blue" : "Светло-синий/темно-синий",
+					"Select Button Height Size" : "Выберите размер высоты кнопки",
+					"* These are the same heights as Facebook Share buttons" : "* Это та же высота, что и у кнопок «Поделиться» в Facebook.",
+					"Generate Code" : "Сгенерировать код",
+					"Preview:" : "Предварительный просмотр:",
+					"Step 1:" : "Шаг 1:",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "Поместите этот код ОДИН РАЗ в HEAD вашего веб-сайта, чтобы загрузить скрипт с помощью jsDelivr CDN:",
+					"Step 2:" : "Шаг 2:",
+					"Place this code where ever you want the button to appear on your page:" : "Разместите этот код там, где вы хотите, чтобы кнопка отображалась на вашей странице:",
+					"Copy" : "Копировать",
+					"This page is part of" : "Эта страница является частью",
+					"which is not an official Mastodon project" : "который не является официальным проектом Mastodon.",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company." : "Логотипы и значки Mastodon являются собственностью немецкой некоммерческой компании Mastodon gGmbH."			
+				
+				},
+				// Swedish
+				"sv" : {
+					"Mastodon Share Button Configurator" : "Mastodon Share Button Configurator",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "Använd konfiguratorn nedan för att anpassa din Mastodon Share Button-styling.",
+					"Select Logo" : "Välj Logotyp",
+					"White Text with Black Icon" : "Vit text med svart ikon",
+					"Black Text with White Icon" : "Svart text med vit ikon",
+					"White Text with Color Icon" : "Vit text med färgikon",
+					"Black Text with Color Icon" : "Svart text med färgikon",
+					"White Icon" : "Vit ikon",
+					"Black Icon" : "Svart ikon",
+					"Color Icon" : "Färgikon",
+					"Select Background Color/Rollover" : "Välj Bakgrundsfärg/Rollover",
+					"Black/Dark Gray" : "Svart/Mörkgrå",
+					"White/Light Gray" : "Vit/Ljusgrå",
+					"Midnight Blue/Black" : "Midnattsblå/svart",
+					"Blue/Purple" : "Blå/lila",
+					"Dark Blue/Light Blue" : "Mörkblå/Ljusblå",
+					"Light Blue/Dark Blue" : "Ljusblå/Mörkblå",
+					"Select Button Height Size" : "Välj storlek på knapphöjd",
+					"* These are the same heights as Facebook Share buttons" : "* Dessa är samma höjder som Facebook Share-knappar",
+					"Generate Code" : "Generera kod",
+					"Preview:" : "Förhandsvisning:",
+					"Step 1:" : "Steg 1:",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "Placera den här koden EN gång i HUVUDET på din webbplats för att ladda skriptet med jsDelivr CDN:",
+					"Step 2:" : "Steg 2:",
+					"Place this code where ever you want the button to appear on your page:" : "Placera den här koden där du vill att knappen ska visas på din sida:",
+					"Copy" : "Kopiera",
+					"This page is part of" : "Denna sida är en del av",
+					"which is not an official Mastodon project" : "som inte är ett officiellt Mastodon-projekt",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company." : "Mastodons logotyper och ikoner tillhör Mastodon gGmbH, ett tyskt icke-vinstdrivande företag"			
+				
+				},
+				// Chinese (Simplified)
+				"zh_HANS" : {
+					"Mastodon Share Button Configurator" : "Mastodon 分享按钮配置器",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "使用下面的配置器自定义您的 Mastodon 分享按钮样式。",
+					"Select Logo" : "选择徽标",
+					"White Text with Black Icon" : "带有黑色图标的白色文本",
+					"Black Text with White Icon" : "黑色文本与白色图标",
+					"White Text with Color Icon" : "带有颜色图标的白色文本",
+					"Black Text with Color Icon" : "带有颜色图标的黑色文本",
+					"White Icon" : "白色图标",
+					"Black Icon" : "黑色图标",
+					"Color Icon" : "颜色图标",
+					"Select Background Color/Rollover" : "选择背景颜色/翻转",
+					"Black/Dark Gray" : "黑色/深灰色",
+					"White/Light Gray" : "白色/浅灰色",
+					"Midnight Blue/Black" : "午夜蓝/黑",
+					"Blue/Purple" : "蓝色/紫色",
+					"Dark Blue/Light Blue" : "深蓝/浅蓝",
+					"Light Blue/Dark Blue" : "浅蓝/深蓝",
+					"Select Button Height Size" : "选择按钮高度尺寸",
+					"* These are the same heights as Facebook Share buttons" : "* 这些与 Facebook 分享按钮的高度相同",
+					"Generate Code" : "生成代码",
+					"Preview:" : "预习：",
+					"Step 1:" : "步骤1：",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "将此代码一次放在您网站的 HEAD 中，以使用 jsDelivr CDN 加载脚本：",
+					"Step 2:" : "第2步：",
+					"Place this code where ever you want the button to appear on your page:" : "将此代码放在您希望按钮出现在页面中的任何位置：",
+					"Copy" : "复制",
+					"This page is part of" : "此页面是",
+					"which is not an official Mastodon project" : "它不是官方的 Mastodon 项目",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company." : "Mastodon 徽标和图标是德国非营利性公司 Mastodon gGmbH 的财产"			
+				
+				},
+				// Chinese (Traditional)
+				"zh_HANT" : {
+					"Mastodon Share Button Configurator" : "Mastodon 分享按鈕配置器",
+					"Use the configurator below to customize your Mastodon Share Button styling." : "使用下面的配置器自定義您的 Mastodon 分享按鈕樣式。",
+					"Select Logo" : "選擇徽標",
+					"White Text with Black Icon" : "帶有黑色圖標的白色文本",
+					"Black Text with White Icon" : "黑色文本與白色圖標",
+					"White Text with Color Icon" : "帶有顏色圖標的白色文本",
+					"Black Text with Color Icon" : "帶有顏色圖標的黑色文本",
+					"White Icon" : "白色圖標",
+					"Black Icon" : "黑色圖標",
+					"Color Icon" : "顏色圖標",
+					"Select Background Color/Rollover" : "選擇背景顏色/翻轉",
+					"Black/Dark Gray" : "黑色/深灰色",
+					"White/Light Gray" : "白色/淺灰色",
+					"Midnight Blue/Black" : "午夜藍/黑",
+					"Blue/Purple" : "藍色/紫色",
+					"Dark Blue/Light Blue" : "深藍/淺藍",
+					"Light Blue/Dark Blue" : "淺藍/深藍",
+					"Select Button Height Size" : "選擇按鈕高度尺寸",
+					"* These are the same heights as Facebook Share buttons" : "* 這些與 Facebook 分享按鈕的高度相同",
+					"Generate Code" : "生成代碼",
+					"Preview:" : "預習：",
+					"Step 1:" : "步驟1：",
+					"Place this code ONCE in the HEAD of your website to load the script with the jsDelivr CDN:" : "將此代碼一次放在您網站的 HEAD 中，以使用 jsDelivr CDN 加載腳本：",
+					"Step 2:" : "第2步：",
+					"Place this code where ever you want the button to appear on your page:" : "將此代碼放在您希望按鈕出現在頁面中的任何位置：",
+					"Copy" : "複製",
+					"This page is part of" : "此頁面是",
+					"which is not an official Mastodon project" : "的一部分，它不是官方的 Mastodon 項目",
+					"Mastodon logos and icons are the property of Mastodon gGmbH, a German non-profit company." : "Mastodon 徽標和圖標是德國非營利性公司 Mastodon gGmbH 的財產"			
+				
+				}
+			},
+			translate : function(code) {
+				// validate country code
+				var valid = false; // assume it is not
+				for (var v=0; v < some.localize.codes.length; v++){
+					if (some.localize.codes[v].includes(code)){
+						valid = true;
+					}
+				}
+				if (!valid) { 
+					throw new Error('country code '+code+' is not valid');
+				}
+				// set language
+				some.settings.language = code;
+				var localize = document.querySelectorAll('.l10n');
+				for (var t=0; t < localize.length; t++) {
+					if (some.localize.matrix[code][''+localize[t].innerHTML.replace(/'/g,'&#39;').replace(/\"/g, '&#34;').replace(/\n|\r|<br\s*\/?>/gi," ").replace(/&amp;|\s&\s/gi,"&#38;")+'']) {	// replace innerHTML
+						localize[t].innerHTML = some.localize.matrix[code][''+localize[t].innerHTML.replace(/'/g,'&#39;').replace(/\"/g, '&#34;').replace(/\n|\r|<br\s*\/?>/gi," ").replace(/&amp;|\s&\s/gi,"&#38;")+''];
+					}
+					if (localize[t].hasAttribute('title')) {
+						if (some.config.localize[''+localize[t].title.replace(/'/g,'&#39;').replace(/\"/g, '&#34;').replace(/\n|\r|<br\s*\/?>/gi," ").replace(/&amp;|\s&\s/gi,"&#38;")+'']) { // replace title
+							localize[t].title = some.localize.matrix[code][''+localize[t].title.replace(/'/g,'&#39;').replace(/\"/g, '&#34;').replace(/\n|\r|<br\s*\/?>/gi," ").replace(/&amp;|\s&\s/gi,"&#38;")+''];
+						}
+					}
+				};
+				console.log('translate() function');
+			},
+			untranslate : function() {
+				var localize = document.querySelectorAll('.l10n');
+				var values   = Object.values(some.localize.matrix[some.settings.language]);
+				for (var t=0; t < localize.length; t++) {
+					if (values.indexOf(''+localize[t].innerHTML.replace(/'/g,'&#39;').replace(/\"/g, '&#34;').replace(/\n|\r|<br\s*\/?>/gi," ").replace(/&amp;|\s&\s/gi,"&#38;")+'')!=-1) {
+						// it exists in the values so get the index
+						localize[t].innerHTML = Object.keys(some.localize.matrix[some.settings.language])[values.indexOf(''+localize[t].innerHTML.replace(/'/g,'&#39;').replace(/\"/g, '&#34;').replace(/\n|\r|<br\s*\/?>/gi," ").replace(/&amp;|\s&\s/gi,"&#38;")+'')];
+					}
+					if (localize[t].hasAttribute('title')) {
+						if (values.indexOf(''+localize[t].title.replace(/'/g,'&#39;').replace(/\"/g, '&#34;').replace(/\n|\r|<br\s*\/?>/gi," ").replace(/&amp;|\s&\s/gi,"&#38;")+'')!=-1) { // replace title
+							localize[t].title = Object.keys(some.localize.matrix[some.settings.language])[values.indexOf(''+localize[t].title.replace(/'/g,'&#39;').replace(/\"/g, '&#34;').replace(/\n|\r|<br\s*\/?>/gi," ").replace(/&amp;|\s&\s/gi,"&#38;")+'')];
+						}
+					}
+				};
+				console.log('UNtranslate() function');
+			},
+			langpicker : function(){
+				var toolbar  = document.getElementById('translate');
+				var pickLang = document.createElement('select');
+					pickLang.id = "pickLang";
+					for (var c=0; c < some.localize.codes.length; c++){
+						if (some.localize.codes[c][0] == some.settings.language){
+							var selectit = " selected ";
+						} else {
+							var selectit = "";
+						}
+						pickLang.innerHTML += '<option value="'+some.localize.codes[c][0]+'"'+selectit+'>'+some.localize.codes[c][1]+'</option>';
+					};
+					pickLang.onclick = function(){some.localize.untranslate();some.localize.translate(this.value);};
+					toolbar.innerHTML = 'Translate: ';
+					toolbar.appendChild(pickLang);			
+			},
+			setlanguage : function(code){
+				some.localize.translate(code); // gets validated and set there
+				some.localize.langpicker();    // sets drop-down
+			}
+		};
+		some.localize.langpicker();
+	</script>
 	</body>
 </html>
