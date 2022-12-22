@@ -2,7 +2,7 @@
 	========================
 	Script URI:  https://github.com/kmhcreative/Share-on-Mastodon-Easily/
 	Description: Makes sharing to Mastodon instances as easy as any other social media platform.
-	Version: 	 1.2
+	Version: 	 1.3
 	Author: 	 K.M. Hansen <software@kmhcreative.com>
 	Author URI:  http://www.kmhcreative.com
 	License: 	 GPLv3
@@ -21,6 +21,15 @@ some['settings'] = {
 	rememberme	:	true,		// whether to offer to remember instance or not
 	skipdialog	:	true,		// whether to skip the instance dialog if remembered
 	openapopup	:	true,		// whether to open in a pop-up window, false opens in new tab
+};
+some['text'] = {
+	'heading' : "Share on Mastodon",
+	'label'	  : "Your instance URL",
+	'checkbox': "Remember my instance on this website",
+	'close'	  : "Close",
+	'share'   : "Share!",
+	'whatis'  : "What is Mastodon?",
+	'github'  : "Mastodon on GitHub"
 };
 // if this script is also styling the share button
 some['logo'] = {	// SVG Mastodon icons/logos using the file names from joinmastodon.org
@@ -187,7 +196,7 @@ some['share'] = function(url){
 		some.window.document.body.innerHTML = ''; // prevent appends
 		var html = '<!DOCTYPE html>'+
 		'<html lang="en-US">'+
-		'<head><title>Share On Mastodon</title>'+
+		'<head><title>'+some.text.heading+'</title>'+
 		'<style>'+
 		'body{max-width:450px;padding:0px 20px;margin:0px auto;background-color:#1f232b;font-family:roboto,Arial,sans-serif;font-size:13px;color:#9baec8;}'+
 		'h1 {font-size:24px;line-height:1.48;font-weight:600;color:#d9e1e8;padding-bottom:35px;border-bottom:1px solid #303643;text-align:center;}'+
@@ -225,20 +234,19 @@ some['share'] = function(url){
 		'</scr'+'ipt>'+
 		'</head>'+
 		'<body>'+
-		'<h1>'+some['logo']['wordmark-white-text']+'<br/>'+
-		'Share On Mastodon</h1>'+
+		'<h1>'+some['logo']['wordmark-white-text']+'<br/>'+some.text.heading+'</h1>'+
 		'<form>'+
-		'<p><label for="instance">Your Instance URL:</label>'+
+		'<p><label for="instance">'+some.text.label+':</label>'+
 		'<input type="text" id="instance" value="'+instance+'" required /><br/>';
 		if (some.settings.rememberme){
-			html += '<input type="checkbox" id="remember"/> Remember my instance on this website</p>';
+			html += '<input type="checkbox" id="remember"/> '+some.text.checkbox+'</p>';
 		}
-		html += '<button id="close" onclick="self.close();">Close</button>'+
-		'<button id="share" onclick="event.preventDefault();shareIt();">Share!</button>'+
+		html += '<button id="close" onclick="self.close();">'+some.text.close+'</button>'+
+		'<button id="share" onclick="event.preventDefault();shareIt();">'+some.text.share+'</button>'+
 		'</form>'+
 		'<footer>'+
-		'<section><a href="https://joinmastodon.org" target="_blank">What is Mastodon?</a></section>'+
-		'<section><a href="https://github.com/mastodon/mastodon" target="_blank">Mastodon on GitHub</a></section>'+
+		'<section><a href="https://joinmastodon.org" target="_blank">'+some.text.whatis+'</a></section>'+
+		'<section><a href="https://github.com/mastodon/mastodon" target="_blank">'+some.text.github+'</a></section>'+
 		'</footer>'+
 		'</body></html>';
 		// write HTML into popup dialog
