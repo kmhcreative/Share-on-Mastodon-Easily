@@ -141,7 +141,7 @@ For example, let's say you want the share window to open in a new tab instead of
   
   If you want to let visitors know that the share button is not exclusive to Mastodon there is an *EXPERIMENTAL* modifier script you can add after loading "some.js" that changes the share button and pop-up window logos from "Mastodon" to "ActivityPub."
   
-  The "activitypub.js" modifier script is in the main repository.
+  The "[activitypub.js](https://github.com/kmhcreative/Share-on-Mastodon-Easily/blob/main/activitypub.js)" modifier script is in the main repository.
   
   f. ***FULL CUSTOMIZATION***
   
