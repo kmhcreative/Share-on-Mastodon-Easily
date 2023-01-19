@@ -135,13 +135,11 @@ For example, let's say you want the share window to open in a new tab instead of
   </script>
   ```
   
-  e. ***ACTIVITY PUB BUTTON***
+  e. ***CHANGE BUTTON & POPUP FOR OTHER PLATFORMS***
   
   In theory the Share Button *should* work with ANY social media platform that supports the ActivityPub protocol. Visitors to your website should be able to enter the instance URL for any ActivityPub site, whether it's Mastodon, Plemora, Misskey, Freindica, etc.
   
-  If you want to let visitors know that the share button is not exclusive to Mastodon there is an *EXPERIMENTAL* modifier script you can add after loading "some.js" that changes the share button and pop-up window logos from "Mastodon" to "ActivityPub."
-  
-  The "[activitypub.js](https://github.com/kmhcreative/Share-on-Mastodon-Easily/blob/main/activitypub.js)" modifier script is in the main repository.
+  The "[activitypub.js](https://github.com/kmhcreative/Share-on-Mastodon-Easily/blob/main/activitypub.js)" modifier script is in the main repository that changes the buttons and pop-up, in this case to show "ActivityPub" (yes I know it's a *protocol* not a *platform*, it's just a generic proof-of-concept to show you how to do it).
   
   f. ***FULL CUSTOMIZATION***
   
