@@ -2,7 +2,7 @@
 	========================
 	Script URI:  https://github.com/kmhcreative/Share-on-Mastodon-Easily/
 	Description: Makes sharing to Mastodon instances as easy as any other social media platform.
-	Version: 	 1.3
+	Version: 	 1.4
 	Author: 	 K.M. Hansen <software@kmhcreative.com>
 	Author URI:  http://www.kmhcreative.com
 	License: 	 GPLv3
@@ -29,7 +29,9 @@ some['text'] = {
 	'close'	  : "Close",
 	'share'   : "Share!",
 	'whatis'  : "What is Mastodon?",
-	'github'  : "Mastodon on GitHub"
+	'link1'   : "https://joinmastodon.org",
+	'github'  : "Mastodon on GitHub",
+	'link2'   : "https://github.com/mastodon/mastodon"
 };
 // if this script is also styling the share button
 some['logo'] = {	// SVG Mastodon icons/logos using the file names from joinmastodon.org
@@ -245,8 +247,8 @@ some['share'] = function(url){
 		'<button id="share" onclick="event.preventDefault();shareIt();">'+some.text.share+'</button>'+
 		'</form>'+
 		'<footer>'+
-		'<section><a href="https://joinmastodon.org" target="_blank">'+some.text.whatis+'</a></section>'+
-		'<section><a href="https://github.com/mastodon/mastodon" target="_blank">'+some.text.github+'</a></section>'+
+		'<section><a href="'+some.text.link1+'" target="_blank">'+some.text.whatis+'</a></section>'+
+		'<section><a href="'+some.text.link2+'" target="_blank">'+some.text.github+'</a></section>'+
 		'</footer>'+
 		'</body></html>';
 		// write HTML into popup dialog

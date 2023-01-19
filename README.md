@@ -134,7 +134,16 @@ For example, let's say you want the share window to open in a new tab instead of
     some.logo['dot-dot-dot'] = '<svg width="75" height="75".....></svg>
   </script>
   ```
-  e. ***FULL CUSTOMIZATION***
+  
+  e. ***ACTIVITY PUB BUTTON***
+  
+  In theory the Share Button *should* work with ANY social media platform that supports the ActivityPub protocol. Visitors to your website should be able to enter the instance URL for any ActivityPub site, whether it's Mastodon, Plemora, Misskey, Freindica, etc.
+  
+  If you want to let visitors know that the share button is not exclusive to Mastodon there is an *EXPERIMENTAL* modifier script you can add after loading "some.js" that changes the share button and pop-up window logos from "Mastodon" to "ActivityPub."
+  
+  The "activitypub.js" modifier script is in the main repository.
+  
+  f. ***FULL CUSTOMIZATION***
   
   If you download the script to do a local installation you can, of course, customize it any way you like.  Including all of the aforementioned customization, which could be done in the "some.js" script if you liked.
 	
@@ -154,6 +163,10 @@ Get the code for this project, submit bugs, issues, suggestions, fork it, whatev
 [https://github.com/kmhcreative/Share-on-Mastodon-Easily](https://github.com/kmhcreative/Share-on-Mastodon-Easily)
   
 ## Changelog
+Version 1.4
+* Made the footer links customizable as well to support...
+* Optional "ActivityPub" modifier script, if you want your share buttons to be platform agnostic.
+
 Version 1.3
 * Made share window text into variables so they can be localized.
 * Added multiple language options to the Button Configurator.
