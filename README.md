@@ -152,8 +152,6 @@ For example, let's say you want the share window to open in a new tab instead of
 
 ### CODE:
 
-Get the code for this project, submit bugs, issues, suggestions, fork it, whatever!
-
 [https://github.com/kmhcreative/Share-on-Mastodon-Easily](https://github.com/kmhcreative/Share-on-Mastodon-Easily)
   
 ## Changelog
