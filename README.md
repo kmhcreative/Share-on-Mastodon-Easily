@@ -1,8 +1,6 @@
 # Share-on-Mastodon-Easily
 
-[ [GO DIRECTLY TO BUTTON CONFIGURATOR](https://kmhcreative.github.io/Share-on-Mastodon-Easily/button_configurator.htm) --> ]
-
-There are literally THOUSANDS of different Mastodon websites on different servers and each is called an “instance.”  Most of them are “federated” with each other, and other platforms that support the AcitvityPub protocol, because the entire thing is decentralized by design.  But that means you have no way to guess which “instance” any visitor to your website might be on.  So, before they can share anything to their Mastodon account you have to FIRST ask them which instance they use.  That’s primarily what this “Share On Mastodon Easily” (S.O.M.E.) script does.  It lets you share some link somewhere. 
+NOTE: I'm retiring and archiving this script. I'm not developing it any further.
 
 This script converts an HTML element with the class name "mastodon" into a share button.  When a visitor presses it a pop-up/tab is created on the fly to ask them what Mastodon instance they are on, and gives them an option to remember it so when they return to your site they are not asked again.
 
@@ -49,7 +47,7 @@ Include an element in your page with the class name "mastodon" and it will be co
 			
   b. ***Customized Button***   
   
-  THERE IS A [***BUTTON CONFIGURATOR***](https://kmhcreative.github.io/Share-on-Mastodon-Easily/button_configurator.htm) FOR THIS, or you can do it manually. Add an element to be turned into the Mastodon Share button:    
+ Add an element to be turned into the Mastodon Share button:    
   
   `<div class="mastodon" data-logo="white" data-color="black" data-size="48"></div>`  	
   
@@ -155,8 +153,6 @@ For example, let's say you want the share window to open in a new tab instead of
 * Button Configurator translations were done with Google Translate, they may not be accurate.  If you can fix any of them please do and submit a pull request for your changes.	
 
 ### CODE:
-
-Get the code for this project, submit bugs, issues, suggestions, fork it, whatever!
 
 [https://github.com/kmhcreative/Share-on-Mastodon-Easily](https://github.com/kmhcreative/Share-on-Mastodon-Easily)
   
