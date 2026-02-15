@@ -4,8 +4,6 @@ NOTE: I'm retiring and archiving this script. I'm not developing it any further.
 
 This script converts an HTML element with the class name "mastodon" into a share button.  When a visitor presses it a pop-up/tab is created on the fly to ask them what Mastodon instance they are on, and gives them an option to remember it so when they return to your site they are not asked again.
 
-<img src="https://kmhcreative.github.io/Share-on-Mastodon-Easily/Mastodon_Instance_PopUp.png" width="400"/> <img src="https://kmhcreative.github.io/Share-on-Mastodon-Easily/Mastodon_Instance_PopUp2.png" width="400"/> <img src="https://kmhcreative.github.io/Share-on-Mastodon-Easily/Mastodon_Publish_Window.png" width="400"/>
-
 ## HOW TO USE THIS SCRIPT    
 
 1. ***LOAD THE SCRIPT***
